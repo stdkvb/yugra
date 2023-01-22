@@ -1,0 +1,248 @@
+.geography {
+	max-width: 1920px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 120px 0 120px 0;
+	background-color: #F8F8F8;
+}
+
+.geography__wrapper {
+	width: calc(100% - 30px);
+	max-width: 1350px;
+}
+
+.geography__title {
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 120%;
+	color: #16274A;
+	margin-bottom: 30px;
+}
+
+.geography__map-wrapper {
+	position: relative;
+	width: 1350px;
+}
+
+.geography__map {
+	width: 1350px;
+}
+
+.geography__location {
+	width: 260px;
+	height: 280px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 22px;
+}
+
+.geography__map-card {
+	position: absolute;
+	background-color: #FFFFFF;
+	width: 260px;
+	height: fit-content;
+	box-shadow: 0px 0px 10px rgba(71, 71, 71, 0.25);
+	padding: 20px;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1;
+}
+
+.geography__map-card_active {
+	display: flex;
+}
+
+.geography__text {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 120%;
+	color: #1C1C1C;
+	margin-bottom: 4px;
+}
+
+.geography__text:last-of-type {
+	margin-bottom: 0;
+}
+
+.geography__text:nth-child(2) {
+	margin-bottom: 16px;
+}
+
+.geography__text_thin {
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.geography__button {
+	margin: 30px auto 0 auto;
+	width: 180px;
+	height: 45px;
+	background-color: transparent;
+	border: none;
+	background-image: url('../../../files/icons/geography-button.svg');
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	color: #36260E;
+}
+
+.geography__map-mark {
+	position: absolute;
+	display: block;
+	width: 45px;
+	height: 30px;
+	background-image: url('../../../files/icons/tracer.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+@media screen and (max-width: 1350px) {
+	.geography__wrapper {
+		overflow: scroll;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.geography {
+		padding: 60px 0 60px 0;
+	}
+
+	.geography__title {
+		font-size: 30px;
+	}
+}
+
+#mark-1 {
+	top: 48%;
+	left: 5.5%;
+}
+
+#mark-2 {
+	top: 34%;
+	left: 17%;
+}
+
+#mark-3 {
+	top: 44%;
+	left: 20%;
+}
+
+#mark-4 {
+	top: 57%;
+	left: 25%;
+}
+
+#mark-5 {
+	top: 49%;
+	left: 28%;
+}
+
+#mark-6 {
+	top: 52%;
+	left: 31%;
+}
+
+#mark-7 {
+	top: 49%;
+	left: 36%;
+}
+
+#mark-8 {
+	top: 63%;
+	left: 36%;
+}
+
+#mark-9 {
+	top: 66%;
+	left: 40%;
+}
+
+#mark-10 {
+	top: 35%;
+	left: 41%;
+}
+
+#mark-11 {
+	top: 46%;
+	left: 43%;
+}
+
+#mark-12 {
+	top: 60%;
+	left: 43%;
+}
+
+#mark-13 {
+	top: 72%;
+	left: 62%;
+}
+
+
+#card-1 {
+	top: 17%;
+	left: 0.5%;
+}
+
+#card-2 {
+	top: 3%;
+	left: 8%;
+}
+
+#card-3 {
+  top: 13%;
+  left: 11%;
+}
+
+#card-4 {
+	top: 26%;
+	left: 16%;
+}
+
+#card-5 {
+	top: 18%;
+	left: 19%;
+}
+
+#card-6 {
+	top: 21%;
+	left: 22%;
+}
+
+#card-7 {
+	top: 18%;
+	left: 27%;
+}
+
+#card-8 {
+	top: 32%;
+	left: 28%;
+}
+
+#card-9 {
+	top: 35%;
+	left: 31%;
+}
+
+#card-10 {
+  top: 4%;
+  left: 32%;
+}
+
+#card-11 {
+	top: 15%;
+	left: 34%;
+}
+
+#card-12 {
+	top: 29%;
+	left: 35%;
+}
+
+#card-13 {
+	top: 41%;
+	left: 53%;
+}
