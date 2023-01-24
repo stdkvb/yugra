@@ -10,6 +10,21 @@
 html {
 	max-width: 1920px;
 }
+
+.body_overflow-hidden {
+	overflow: hidden;
+}
+
 button:hover {
+	cursor: pointer;
 	opacity: 0.6;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.6;
+	cursor: pointer;
 }

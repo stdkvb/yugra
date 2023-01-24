@@ -6,10 +6,14 @@ burgerButton.addEventListener("click", () => {
 		headerMenu.classList.remove("header__menu_active");
 		headerMenu.parentElement.classList.remove("header__wrapper_active");
 		header.classList.remove("header_blur");
+		burgerButton.classList.remove("header__burger-button_active");
+		document.body.classList.remove("body_overflow-hidden");
 	} else {
 		headerMenu.classList.add("header__menu_active");
 		headerMenu.parentElement.classList.add("header__wrapper_active");
 		header.classList.add("header_blur");
+		burgerButton.classList.add("header__burger-button_active");
+		document.body.classList.add("body_overflow-hidden");
 	}
 });
 
@@ -53,11 +57,54 @@ directions.forEach((elem) => {
 const marks = document.querySelectorAll(".geography__map-mark");
 marks.forEach((elem) => {
 	elem.addEventListener("click", function () {
+		const cardActive = document.querySelectorAll(".geography__map-card_active");
+		cardActive.forEach((elem) => {
+			elem.classList.remove("geography__map-card_active");
+		});
 		const card = this.previousElementSibling;
-		if (card.classList.contains("geography__map-card_active")) {
-			card.classList.remove("geography__map-card_active");
-		} else {
-			card.classList.add("geography__map-card_active");
-		}
+		card.classList.toggle("geography__map-card_active");
 	});
+	const map = document.querySelector(".geography__map");
+	map.onclick = function () {
+		const cardActive = document.querySelectorAll(".geography__map-card_active");
+		cardActive.forEach((elem) => {
+			elem.classList.remove("geography__map-card_active");
+		});
+	};
 });
+
+const newsSwiper = new Swiper(".news-swiper", {
+	slidesPerView: 4,
+	spaceBetween: 30,
+	pagination: {
+		el: ".swiper-pagination",
+	},
+	mousewheel: false,
+	keyboard: true,
+});
+
+const projectSwiper = new Swiper(".project__swiper", {
+	direction: "horizontal",
+	slidesPerView: 4,
+	spaceBetween: 30,
+	pagination: {
+		el: ".swiper-pagination",
+	},
+	mousewheel: false,
+	keyboard: true,
+	breakpoints: {
+		360: {
+			slidesPerView: 1,
+		},
+		690: {
+			slidesPerView: 2,
+		},
+		1020: {
+			slidesPerView: 3,
+		},
+		1350: {
+			direction: "vertical",
+		},
+	},
+});
+

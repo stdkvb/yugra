@@ -31,6 +31,10 @@
 	align-items: center;
 }
 
+.directions__header:hover {
+	cursor: pointer;
+}
+
 .directions__direction-title {
 	margin: 0;
 	font-weight: 700;

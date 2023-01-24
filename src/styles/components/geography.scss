@@ -13,6 +13,8 @@
 }
 
 .geography__title {
+	width: calc(100% - 30px);
+	max-width: 1350px;
 	font-weight: 700;
 	font-size: 54px;
 	line-height: 120%;
@@ -88,6 +90,9 @@
 	font-size: 16px;
 	line-height: 16px;
 	color: #36260E;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .geography__map-mark {
@@ -103,6 +108,14 @@
 @media screen and (max-width: 1350px) {
 	.geography__wrapper {
 		overflow: scroll;
+	}
+
+	.geography__map-card {
+		position: fixed;
+		top: 50% !important;
+		left: 50% !important;
+		transform: translate(-50%, -50%);
+		width: 330px;
 	}
 }
 

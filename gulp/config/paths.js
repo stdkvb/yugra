@@ -14,7 +14,7 @@ const paths = {
 		audio: `${BUILD_FOLDER_PATH}/files/audio`
 	},
 	src: {
-		html: `${SRC_FOLDER_PATH}/html/*.html`,
+		html: `${SRC_FOLDER_PATH}/html/pages/*.html`,
 		styles: `${SRC_FOLDER_PATH}/styles/style.scss`,
 		scripts: `${SRC_FOLDER_PATH}/scripts`,
 		utilsScripts: `${SRC_FOLDER_PATH}/utilsScripts`,
