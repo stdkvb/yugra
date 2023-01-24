@@ -1,18 +1,18 @@
 <header class="header">
 	<div class="header__wrapper">
-		<img class="header__logo" src="@images/logo.png" alt="logo">
+		<a href="/index.html"><img class="header__logo" src="@images/@@if (context.logo) {@@logo}" alt="logo"></a>
 			<div class="header__menu">
 				<nav>
-					<a class="header__nav-link">О компании</a>
+					<a class="header__nav-link@@if (context.class) { @@class}">О компании</a>
 				</nav>
 				<nav>
-					<a class="header__nav-link">Направления</a>
+					<a class="header__nav-link@@if (context.class) { @@class}">Направления</a>
 				</nav>
 				<nav>
-					<a class="header__nav-link">Система качества</a>
+					<a class="header__nav-link@@if (context.class) { @@class}">Система качества</a>
 				</nav>
 				<nav>
-					<a class="header__nav-link">Партнёрам</a>
+					<a class="header__nav-link@@if (context.class) { @@class}">Партнёрам</a>
 				</nav>
 				<a href="mailto:" class="header__button">Пригласить в тендер</a>
 			</div>

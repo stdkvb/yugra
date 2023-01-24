@@ -74,7 +74,7 @@ marks.forEach((elem) => {
 });
 
 const newsSwiper = new Swiper(".news-swiper", {
-	slidesPerView: 4,
+	slidesPerView: "auto",
 	spaceBetween: 30,
 	pagination: {
 		el: ".swiper-pagination",

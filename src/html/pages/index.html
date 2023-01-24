@@ -2,9 +2,14 @@
 <html lang="ru">
 	@@include('meta/_head.html')
 	<body>
-		@@include('components/header/_index.html')
+		@@include('components/header/_index.html', {class: 'header__nav-link_white', logo: 'logo-white.png'})
+		@@include('components/video-background/_index.html')
 		<main>
-            @@include('components/project/_index.html')
+			@@include('components/head-title/_index.html')
+			@@include('components/numbers/_index.html')
+			@@include('components/directions/_index.html')
+			@@include('components/geography/_index.html')
+			@@include('components/news-slider/_index.html')
 		</main>
 		@@include('components/footer/_index.html')
 
