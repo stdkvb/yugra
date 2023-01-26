@@ -1,22 +1,14 @@
 <header class="header">
 	<div class="header__wrapper">
 		<a href="/index.html"><img class="header__logo" src="@images/@@if (context.logo) {@@logo}" alt="logo"></a>
-			<div class="header__menu">
-				<nav>
-					<a class="header__nav-link@@if (context.class) { @@class}">О компании</a>
-				</nav>
-				<nav>
-					<a class="header__nav-link@@if (context.class) { @@class}">Направления</a>
-				</nav>
-				<nav>
-					<a class="header__nav-link@@if (context.class) { @@class}">Система качества</a>
-				</nav>
-				<nav>
-					<a class="header__nav-link@@if (context.class) { @@class}">Партнёрам</a>
-				</nav>
-				<a href="mailto:" class="header__button">Пригласить в тендер</a>
-			</div>
-		<span class="header__phone">+7 (347) 246-28-13</span>
-		<button class="header__burger-button"></button>
+			<nav class="header__menu">
+					<a class="header__nav-link@@if (context.class) {@@class}">О компании</a>
+					<a class="header__nav-link@@if (context.class) {@@class}">Направления</a>
+					<a class="header__nav-link@@if (context.class) {@@class}">Система качества</a>
+					<a class="header__nav-link@@if (context.class) {@@class}">Партнёрам</a>
+					<a href="mailto:" class="header__button">Пригласить в тендер</a>
+			</nav>
+		<a class="header__phone@@if (context.class) {@@class}" href="tel:+7 (347) 246-28-13">+7 (347) 246-28-13</a>
+		<button class="header__burger-button@@if (context.class) {@@class}" id="burger-button"></button>
 	</div>
 </header>

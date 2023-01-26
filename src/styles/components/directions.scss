@@ -1,16 +1,14 @@
 .directions {
 	max-width: 1920px;
-	margin-top: -114px;
 	padding-top: 200px;
 	padding-bottom: 120px;
 	height: fit-content;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	background: linear-gradient(0deg, rgba(22, 39, 74, 0.5), rgba(22, 39, 74, 0.5)), url('../../files/images/directions-background.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	position: relative;
+	background: linear-gradient(0deg, rgba(22, 39, 74, 0.5), rgba(22, 39, 74, 0.5));
+	overflow: hidden;
 }
 
 .directions__container {
@@ -33,6 +31,19 @@
 
 .directions__header:hover {
 	cursor: pointer;
+}
+
+.directions__background-image {
+	position: absolute;
+	left: -21%;
+	bottom: -120px;
+	z-index: -2;
+	max-width: 1920px;
+	display: none;
+}
+
+.directions__background-image_active {
+	display: block;
 }
 
 .directions__direction-title {
@@ -59,7 +70,6 @@
 
 .directions__about {
 	padding: 30px 30px 30px 30px;
-	// background-image: url('../../../files/icons/directions-about-border.svg');
 	background-repeat: no-repeat;
 	display: none;
 	border: solid 2px #FFFFFF;
@@ -78,13 +88,9 @@
 	line-height: 150%;
 }
 
-.directions__about-list {
+.directions__about-text {
 	margin: 10px 0 30px 0;
 	padding: 0;
-	list-style: none;
-}
-
-.directions__about-list-item {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
@@ -106,7 +112,6 @@
 
 @media screen and (max-width: 1110px) {
 	.directions {
-		margin-top: 27px;
 		padding-top: 60px;
 	}
 }
@@ -163,42 +168,3 @@
 		font-size: 26px;
 	}
 }
-
-// .directions__list {
-// 	margin: 0;
-// 	padding: 0;
-// 	width: 50%;
-// 	list-style: none;
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: flex-start;
-// 	justify-content: flex-start;
-
-// }
-
-// .directions__item {
-// 	width: 100%;
-// 	margin: 0 0 32px 0;
-// 	font-weight: 700;
-// 	font-size: 32px;
-// 	line-height: 120%;
-// 	color: rgba(255, 255, 255, 0.7);
-// }
-
-// .directions__item_active {
-// 	padding-bottom: 14px;
-// 	font-size: 42px;
-// 	line-height: 120%;
-// 	color: #FFFFFF;
-// 	border-bottom: 2px solid #FFFFFF;
-// 	background-repeat: no-repeat;
-// 	background-position: bottom;
-// 	background-size: 99%;
-// }
-
-// .directions__about-title {
-// 	font-weight: 700;
-// 	font-size: 32px;
-// 	line-height: 150%;
-// 	color: #FFFFFF;
-// }

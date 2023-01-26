@@ -2,16 +2,19 @@
 	max-width: 1920px;
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 
 .numbers__container {
-	margin: -155px 15px 0 15px;
+	margin: 0 15px 0 15px;
 	padding: 0;
 	width: 1350px;
 	height: fit-content;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	position: absolute;
+	bottom: -130px;
 }
 
 .numbers__items-container {
@@ -20,6 +23,7 @@
 	height: 267px;
 	display: flex;
 	background: url(../../../files/icons/numbers-background.svg);
+	z-index: 3;
 }
 
 .numbers__items-container:last-of-type {
@@ -69,8 +73,21 @@
 	text-align: center;
 }
 
+@media screen and (max-width: 1380px) {
+	.numbers__container {
+		width: 100%;
+		padding: 0 15px 0 15px;
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.numbers__container {
+		bottom: 40px;
+	}
+}
 
 @media screen and (max-width: 1200px) {
+
 	.numbers__item-title {
 		font-size: 40px;
 	}
@@ -89,15 +106,9 @@
 	}
 }
 
-@media screen and (max-width: 1110px) {
-  .numbers__container {
-		margin-top: -439px;
-	}
-}
-
 @media screen and (max-width: 800px) {
-  .numbers__container {
-		margin-top: -365px;
+	.numbers__container {
+		bottom: 100px;
 	}
 
   .numbers__items-container {

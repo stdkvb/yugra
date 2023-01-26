@@ -1,4 +1,4 @@
-const burgerButton = document.querySelector(".header__burger-button");
+const burgerButton = document.getElementById("burger-button");
 const headerMenu = document.querySelector(".header__menu");
 const header = document.querySelector(".header");
 burgerButton.addEventListener("click", () => {
@@ -7,12 +7,14 @@ burgerButton.addEventListener("click", () => {
 		headerMenu.parentElement.classList.remove("header__wrapper_active");
 		header.classList.remove("header_blur");
 		burgerButton.classList.remove("header__burger-button_active");
+		burgerButton.classList.remove("header__burger-button_white_active");
 		document.body.classList.remove("body_overflow-hidden");
 	} else {
 		headerMenu.classList.add("header__menu_active");
 		headerMenu.parentElement.classList.add("header__wrapper_active");
 		header.classList.add("header_blur");
 		burgerButton.classList.add("header__burger-button_active");
+		burgerButton.classList.add("header__burger-button_white_active");
 		document.body.classList.add("body_overflow-hidden");
 	}
 });
@@ -36,20 +38,27 @@ directions.forEach((elem) => {
 		directionActive.forEach((elem) => {
 			elem.classList.remove("directions__direction_active");
 		});
+		const backgroundActive = document.querySelectorAll(".directions__background-image_active");
+		backgroundActive.forEach((elem) => {
+			elem.classList.remove("directions__background-image_active");
+		});
 		const direction = this.parentNode;
 		const about = direction.querySelector(".directions__about");
 		const directionArrow = direction.querySelector(".directions__direction-button");
 		const title = direction.querySelector(".directions__direction-title");
+		const background = direction.querySelector(".directions__background-image");
 		if (about.classList.contains("directions__about_active")) {
 			about.classList.remove("directions__about_active");
 			directionArrow.classList.remove("directions__direction-button_active");
 			title.classList.remove("directions__direction-title_active");
 			direction.classList.remove("directions__direction_active");
+			background.classList.remove("directions__background-image_active");
 		} else {
 			about.classList.add("directions__about_active");
 			directionArrow.classList.add("directions__direction-button_active");
 			title.classList.add("directions__direction-title_active");
 			direction.classList.add("directions__direction_active");
+			background.classList.add("directions__background-image_active");
 		}
 	});
 });
@@ -108,3 +117,18 @@ const projectSwiper = new Swiper(".project__swiper", {
 	},
 });
 
+const navSwiper = new Swiper(".nav-bar", {
+	slidesPerView: "auto",
+	spaceBetween: 24,
+	navigation: {
+		nextEl: '.swiper-button-next',
+	},
+	mousewheel: false,
+	keyboard: true,
+	breakpoints: {
+		991: {
+			spaceBetween: 100,
+
+		},
+	},
+});
