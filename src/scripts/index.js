@@ -128,7 +128,6 @@ const navSwiper = new Swiper(".nav-bar", {
 	breakpoints: {
 		991: {
 			spaceBetween: 100,
-
 		},
 	},
 });
