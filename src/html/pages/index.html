@@ -8,7 +8,10 @@
 			@@include('components/head-title/_index.html')
 			@@include('components/numbers/_index.html')
 			@@include('components/directions/_index.html')
-			@@include('components/geography/_index.html')
+			<section class="geography">
+				<h2 class="geography__title">География компании</h2>
+				@@include('components/map/_index.html')
+			</section>
 			@@include('components/news-slider/_index.html')
 		</main>
 		@@include('components/footer/_index.html')

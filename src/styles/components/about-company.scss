@@ -48,12 +48,12 @@
 
 .about-company__right-bar {
 	width: 330px;
-	display: flex;
-	justify-content: center;
 }
 
 .about-company .presentation {
-		position: fixed;
+		position: sticky;
+		top: 0;
+		margin: 0 auto;
 }
 
 @media screen and (max-width: 1350px) {

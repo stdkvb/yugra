@@ -60,3 +60,21 @@
 		margin-top: 19px;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.page-title {
+		background-position: right -28px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.page-title {
+		background-position: right -60px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.page-title {
+		background-position: right -390px;
+	}
+}

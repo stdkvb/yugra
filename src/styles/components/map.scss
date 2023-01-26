@@ -1,16 +1,15 @@
-
 .map__wrapper {
-	width: calc(100% - 30px);
-	max-width: 1350px;
+	width: 100%;
+	max-width: 840px;
 }
 
-.map__map-wrapper {
+.map__container {
 	position: relative;
-	width: 1350px;
+	width: 840px;
 }
 
-.map__map {
-	width: 1350px;
+.map__map-image {
+	width: 100%;
 }
 
 .map__location {
@@ -85,6 +84,7 @@
 	background-image: url('../../../files/icons/tracer.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 1350px) {

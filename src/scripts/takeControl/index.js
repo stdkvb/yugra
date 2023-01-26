@@ -1,3 +1,6 @@
+import takeControlBurger from "./burger";
+import takeControlDirections from "./directions";
+import takeControlMap from "./map";
 import takeControlAccordion from "./accordion";
 
-export {takeControlAccordion}
+export {takeControlBurger, takeControlDirections, takeControlMap, takeControlAccordion}
