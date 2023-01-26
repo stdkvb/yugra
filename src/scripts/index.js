@@ -1,3 +1,13 @@
+import {takeControlAccordion} from './takeControl'
+
+takeControlAccordion('.about-company','.accordion__list', {
+	accordionItemSelector: '.accordion__item',
+	accordionItemTogglerSelector: '.accordion__toggle',
+	accordionItemContentSelector: '.accordion__content',
+	accordionItemActiveClass: 'accordion__item_active'
+})
+
+
 const burgerButton = document.getElementById("burger-button");
 const headerMenu = document.querySelector(".header__menu");
 const header = document.querySelector(".header");

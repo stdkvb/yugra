@@ -1,8 +1,9 @@
-@import url(./normalize.scss);
 @import url(./basic.scss);
 @import url(./fonts.scss);
 @import url(./swiper.scss);
-@import url(./map.scss);
+@import url(./road-map.scss);
+
+@import url(./components/ui/accordion.scss);
 
 @import url(./components/header.scss);
 @import url(./components/video-background.scss);

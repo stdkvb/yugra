@@ -10,49 +10,30 @@
 	padding: 40px;
 	background-color: #FFFFFF;
 	display: flex;
+	gap: 30px;
 }
 
 .about-company__text {
-	max-width: 840px;
+	color: #16274A;
+	font-weight: 700;
 }
 
 .about-company__text h2 {
-	font-weight: 700;
 	font-size: 32px;
 	line-height: 120%;
-	color: #16274A;
-	margin-bottom: 20px;
 }
 
 .about-company__text p {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
-	color: #16274A;
 	margin-bottom: 10px;
-}
-
-.about-company__text h3 {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 120%;
-	color: #16274A;
-	margin: 30px 0 20px 0;
-}
-
-.about-company__text h4 {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 120%;
-	color: #16274A;
-	margin: 10px 0;
 }
 
 .about-company__text ul {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
-	color: #16274A;
 	margin-bottom: 10px;
 }
 
@@ -62,16 +43,54 @@
 }
 
 .about-company__content {
-	width: 100%;
+	width: 840px;
 }
 
 .about-company__right-bar {
 	width: 330px;
+	display: flex;
+	justify-content: center;
+}
+
+.about-company .presentation {
+		position: fixed;
+}
+
+@media screen and (max-width: 1350px) {
+	.about-company .presentation {
+		position: unset;
+	}
+
+	.about-company {
+		padding: 0 15px;
+	}
+
+	.about-company__wrapper {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 0px;
+	}
 }
 
 @media screen and (max-width: 991px) {
-	.about-company__wrapper {
-		flex-direction: column;
-		align-items: center;
+	.about-company__content {
+		width: 100%;
+	}
+
+	.about-company__text {
+		padding: 0 10px;
+	}
+
+	.about-company__text h2 {
+		font-size: 26px;
+	}
+
+	.about-company__text p {
+		font-size: 14px;
+	}
+
+	.about-company__text ul {
+		font-size: 14px;
 	}
 }
