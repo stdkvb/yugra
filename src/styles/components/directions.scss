@@ -103,12 +103,13 @@
 	width: 157px;
 	height: 54px;
 	background-image: url('../../../files/icons/directions-button.svg');
-	background-color: transparent;
 	color: #FFD130;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 22px;
-	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @media screen and (max-width: 1110px) {

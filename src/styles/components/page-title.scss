@@ -23,8 +23,11 @@
 	color: #8B93A5;
 }
 
-.page-title__directory a:last-of-type {
-	color: #5C6881 !important;
+.page-title__directory span {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #5C6881;
 }
 
 .page-title h1 {
@@ -75,6 +78,6 @@
 
 @media screen and (min-width: 800px) {
 	.page-title {
-		background-position: right -390px;
+		background-position: right -355px;
 	}
 }
