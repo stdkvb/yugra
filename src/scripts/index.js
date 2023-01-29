@@ -69,6 +69,13 @@ takeControlAccordion(".about-company", ".accordion__list", {
 	accordionItemActiveClass: "accordion__item_active",
 });
 
+takeControlAccordion(".other-directions", ".accordion__list", {
+	accordionItemSelector: ".accordion__item",
+	accordionItemTogglerSelector: ".accordion__toggle",
+	accordionItemContentSelector: ".accordion__content",
+	accordionItemActiveClass: "accordion__item_active",
+});
+
 const headerNavLink = document.querySelectorAll(".header__nav-link");
 headerNavLink.forEach((el) => {
 	if (el.getAttribute("href") == window.location.pathname) el.classList.add("header__nav-link_active");

@@ -25,6 +25,6 @@ class AccordionController {
 			accordionItem.classList.remove(this._options.accordionItemActiveClass)
 		})
 	}
-}
+};
 
-export default AccordionController
+export default AccordionController;
