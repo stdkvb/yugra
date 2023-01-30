@@ -26,6 +26,7 @@
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
+	color: #16274A;
 }
 
 .other-directions a {
@@ -45,4 +46,49 @@
 .other-directions .accordion__item {
 	padding: 40px 40px 40px 60px;
 	box-shadow: unset;
+}
+
+@media screen and (max-width: 1380px) {
+	.other-directions__wrapper {
+		width: 100%;
+		padding: 40px 15px 60px 15px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.other-directions h2 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.other-directions h3 {
+		font-size: 26px;
+	}
+
+	.other-directions p {
+		font-size: 14px;
+	}
+
+	.other-directions .accordion__content {
+		margin-top: 10px;
+	}
+
+	.other-directions .accordion__content a {
+		margin-top: 20px;
+	}
+
+	.other-directions .accordion__item {
+		padding: 20px 10px;
+	}
+
+	.other-directions .accordion__item_active {
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.other-directions .accordion__content a {
+		width: 100%;
+	}
 }
