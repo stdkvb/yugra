@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+	@@include('meta/_head.html', {title: 'Направления проектирования'})
+	<body>
+		@@include('components/header/_index.html', {logo: 'logo-blue.png'})
+		<main>
+      @@include('components/page-title/_index.html', {title: 'Направления', background: 'direction-background-3.png', main: 'Направления', previous: 'Проектирование', current: 'Направления проектирования'})
+			@@include('components/nav-bar/_index.html', {link1: 'Направления проектирования', link2: 'Значимые проекты', link3: 'Результаты проектирования'})
+			<section class="direction">
+				<div class="direction__wrapper">
+					<div class="direction__content">
+						<div class="direction__text">
+							<h2>Основные направления деятельности ООО “ЮГРАНЕФТЕГАЗПРОЕКТ”</h2>
+							<div class="accordion">
+								<div class="accordion__list">
+									<div class="accordion__item">
+										<div class="accordion__toggle">
+											<h2 class="accordion__link">Площадочные объекты</h2>
+											<div class="accordion-icon">
+												<img src="@icons/accordeon-arrow-blue.svg" alt="accordion-icon">
+											</div>
+										</div>
+										<div class="accordion__content">
+											<p class="accordion__content-text">Кусты скважин;<br>
+												Подготовка нефти, газа и воды (УПН, УПГ, УПСВ, КНС, ДНС и др.);<br>
+												Нефтегазосборные сети;<br>
+												КНС, высоконапорные водоводы;<br>
+												Транспорт нефти и газа.<br>
+												</p>
+										</div>
+									</div>
+									<div class="accordion__item">
+										<div class="accordion__toggle">
+											<h2 class="accordion__link">Объекты энергетики</h2>
+											<div class="accordion-icon">
+												<img src="@icons/accordeon-arrow-blue.svg" alt="accordion-icon">
+											</div>
+										</div>
+										<div class="accordion__content">
+											<p>Обязательная часть градостроительной деятельности, обеспечивающая комплексное изучение природных условий территории (региона, района, площадки, участка, трассы) и факторов техногенного воздействия на территорию объектов капитального строительства для решения следующих задач</p>
+										</div>
+									</div>
+									<div class="accordion__item">
+										<div class="accordion__toggle">
+											<h2 class="accordion__link">Линейные объекты</h2>
+											<div class="accordion-icon">
+												<img src="@icons/accordeon-arrow-blue.svg" alt="accordion-icon">
+											</div>
+										</div>
+										<div class="accordion__content">
+											<p>Обязательная часть градостроительной деятельности, обеспечивающая комплексное изучение природных условий территории (региона, района, площадки, участка, трассы) и факторов техногенного воздействия на территорию объектов капитального строительства для решения следующих задач</p>
+										</div>
+									</div>
+									<div class="accordion__item">
+										<div class="accordion__toggle">
+											<h2 class="accordion__link">Основные сооружения</h2>
+											<div class="accordion-icon">
+												<img src="@icons/accordeon-arrow-blue.svg" alt="accordion-icon">
+											</div>
+										</div>
+										<div class="accordion__content">
+											<p>Обязательная часть градостроительной деятельности, обеспечивающая комплексное изучение природных условий территории (региона, района, площадки, участка, трассы) и факторов техногенного воздействия на территорию объектов капитального строительства для решения следующих задач</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>Лаборатория по неразрушающему контролю</h3>
+							<p>С целью проведения диагностики и выявления дефектов и отклонений от нормативных параметров строительных конструкций в ООО «Югранефтегазпроект» организована и аккредитована лаборатория по неразрушающему контролю.</p>
+							<p>Создание данной лаборатории позволяет проводить обследование зданий и сооружений, строительных конструкций, без привлечения сторонних фирм.</p>
+							<ul>Лаборатория оснащена оборудованием:
+								<li>Измеритель прочности ОНИКС-2.5</li>
+								<li>Толщиномер ультразвуковой ТЭМП-УТ1</li>
+								<li>	Визуально инструментальный контроль ВИК-1</li>
+								<li>Нивелир CSD/berger SAL24N</li>
+								<li>Теодолит VEGA Teo20B</li>
+								<li>Рулетка лазерная</li>
+								<li>Рулетка 50 м</li>
+								<li>Веха геодезическая</li>
+								<li>Штатив геодезический</li>
+								<li>Фотоаппарат Panasonic DMC-TZ35</li>
+								<li>Ультразвуковой дефектоскоп УСД-50</li>
+								<li>Люксметр Ю116/2</li>
+								<li>Набор стандартных образцов</li>
+								<li>Набор образцов шероховатости</li>
+							</ul>
+							<p>Специалисты, выполняющие работы по неразрушающему контролю прошли подготовку и аттестованы по программе «Дефектоскопист по ультразвуковому контролю».</p>
+						</div>
+					</div>
+					<div class="direction__right-bar">
+						@@include('components/presentation/_index.html')
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('components/footer/_index.html')
+
+		@@include('meta/_includeScripts.html')
+	</body>
+</html>

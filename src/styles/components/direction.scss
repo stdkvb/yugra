@@ -1,4 +1,4 @@
-.about-company {
+.direction {
 	max-width: 1920px;
 	background-color: #F8F8F8;
 	display: flex;
@@ -6,7 +6,7 @@
 	padding: 80px 0 120px 0;
 }
 
-.about-company__wrapper {
+.direction__wrapper {
 	width: 1350px;
 	padding: 40px;
 	background-color: #FFFFFF;
@@ -15,93 +15,84 @@
 	gap: 30px;
 }
 
-.about-company__text {
+.direction__text {
 	color: #16274A;
 	font-weight: 700;
-	margin-bottom: 40px;
 }
 
-.about-company__text h2 {
+.direction__text h2 {
+	font-weight: 700;
 	font-size: 32px;
 	line-height: 120%;
 	margin-bottom: 20px;
 }
 
-.about-company__text h3 {
-	font-size: 32px;
+.direction__text h3 {
+	font-weight: 700;
+	font-size: 20px;
 	line-height: 120%;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
-.about-company__text p {
+.direction__text h4 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 120%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.direction__text p {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
 	margin-bottom: 10px;
 }
 
-.about-company__text ul {
+.direction__text ul {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
 	margin-bottom: 10px;
 }
 
-.about-company__text li {
+.direction__text li {
 	list-style-type: disc;
 	margin-left: 17px;
 }
 
-.about-company__content {
+.direction__content {
 	width: 840px;
+	overflow: hidden;
 }
 
-.about-company__right-bar {
+.direction__right-bar {
 	width: 330px;
 }
 
-.about-company .presentation {
+.direction .presentation {
 		position: sticky;
 		top: 0;
 		margin: 0 auto;
 		top: 40px;
 }
 
-.about-company__accordion-list {
-	gap: 24px;
-}
-
-.about-company .accordion-icon {
-	margin-left: 25px;
-}
-
-.about-company__year-accardeon {
-	margin-top: 60px;
-	box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-}
-
-.about-company__year-accardeon .accordion__item {
-	box-shadow: unset;
-}
-
-.about-company__year-accardeon .accordion__item_active {
-	box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-}
-
 @media screen and (max-width: 1350px) {
-	.about-company .presentation {
+	.direction .presentation {
 		position: unset;
 	}
 
-	.about-company {
+	.direction {
 		padding: 60px 15px;
 	}
 
-	.about-company__text {
+	.direction__text {
 		padding: 0 10px;
 		margin-bottom: 20px;
 	}
 
-	.about-company__content {
+	.direction__content {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -110,34 +101,32 @@
 }
 
 @media screen and (max-width: 991px) {
-	.about-company__wrapper {
+	.direction__wrapper {
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
 		padding: 20px 0px;
 	}
 
-	.about-company .accordion-icon {
-		margin-left: 10px;
-	}
-
-	.about-company__content {
+	.direction__content {
 		width: 100%;
 	}
 
-	.about-company__text {
-		padding: 0 10px;
-	}
-
-	.about-company__text h2 {
+	.direction__text h2 {
 		font-size: 26px;
 	}
 
-	.about-company__text p {
+	.direction__text p {
 		font-size: 14px;
 	}
 
-	.about-company__text ul {
+	.direction__text ul {
 		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 991px) {
+	.direction__image {
+		width: 100%;
 	}
 }

@@ -3,7 +3,6 @@
 	display: flex;
 	justify-content: center;
 	height: 305px;
-	background-image: url('../../../files/images/page-title-background-1.png');
 	background-size: cover;
 	background-position: right -285px;
 }
@@ -23,11 +22,13 @@
 	color: #8B93A5;
 }
 
-.page-title__directory span {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 150%;
+.page-title__directory a:last-of-type {
 	color: #5C6881;
+	cursor: unset;
+}
+
+.page-title__directory a:last-of-type:hover {
+	opacity: unset;
 }
 
 .page-title h1 {

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+	@@include('meta/_head.html', {title: 'Направление'})
+	<body>
+		@@include('components/header/_index.html', {logo: 'logo-blue.png'})
+		<main>
+      @@include('components/page-title/_index.html', {title: 'Направления', background: 'direction-background-3.png', main: 'Направления', current: 'Проектирование'})
+			@@include('components/nav-bar/_index.html', {link1: 'Направления проектирования', link2: 'Значимые проекты', link3: 'Результаты проектирования'})
+			<section class="direction">
+				<div class="direction__wrapper">
+					<div class="direction__content">
+						<div class="direction__text">
+							<h2>Проектирование</h2>
+							<p>Проектирование включает разработку проектно-сметной документации, необходимой для проведения строительно-монтажных работ. Это очень важный этап инвестиционного цикла, который в наибольшей мере определяет эффективность намеченного строительства.</p>
+							<p>ООО «Югранефтегазпроект» за свою 5-летнюю практику успешно разработало ряд важных проектов для объектов нефтегазовой промышленности. Нашими неизменными принципами при этом являются высокий профессионализм, внимание к деталям, использование самых новейших разработок строительной индустрии, а также взвешенная ценовая политика. Проектирование объектов промышленного назначения от нашей компании — это гарантированное качество, четкое соблюдение сроков и полное соответствие всем технологическим требованиям.</p>
+						</div>
+						<img class="direction__image" src="@images/direction-image.png">
+					</div>
+					<div class="direction__right-bar">
+						@@include('components/presentation/_index.html')
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('components/footer/_index.html')
+
+		@@include('meta/_includeScripts.html')
+	</body>
+</html>
