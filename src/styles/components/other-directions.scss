@@ -37,6 +37,7 @@
 	height: 54px;
 	border: solid 2px #16274A;
 	margin-top: 40px;
+	color: #16274a;
 }
 
 .other-directions .accordion__list {
@@ -46,6 +47,14 @@
 .other-directions .accordion__item {
 	padding: 40px 40px 40px 60px;
 	box-shadow: unset;
+}
+
+.other-directions .accordion__background-image {
+	max-width: 500px;
+}
+
+.other-directions .accordion__content {
+	margin-right: 500px;
 }
 
 @media screen and (max-width: 1380px) {
@@ -72,6 +81,7 @@
 
 	.other-directions .accordion__content {
 		margin-top: 10px;
+		margin-right: 44px;
 	}
 
 	.other-directions .accordion__content a {

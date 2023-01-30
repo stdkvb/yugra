@@ -22,12 +22,14 @@
 }
 
 .about-company__text h2 {
+	font-weight: 700;
 	font-size: 32px;
 	line-height: 120%;
 	margin-bottom: 20px;
 }
 
 .about-company__text h3 {
+	font-weight: 700;
 	font-size: 32px;
 	line-height: 120%;
 }
@@ -70,6 +72,18 @@
 	gap: 24px;
 }
 
+.about-company__accordion-list {
+	box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.about-company__accordion-list .accordion__item {
+	box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.about-company__accordion-list .accordion__content {
+	margin-right: unset;
+}
+
 .about-company .accordion-icon {
 	margin-left: 25px;
 }
@@ -77,10 +91,6 @@
 .about-company__year-accardeon {
 	margin-top: 60px;
 	box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-}
-
-.about-company__year-accardeon .accordion__item {
-	box-shadow: unset;
 }
 
 .about-company__year-accardeon .accordion__item_active {
@@ -130,6 +140,10 @@
 	}
 
 	.about-company__text h2 {
+		font-size: 26px;
+	}
+
+	.about-company__text h3 {
 		font-size: 26px;
 	}
 
