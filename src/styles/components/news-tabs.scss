@@ -1,0 +1,160 @@
+.news-tabs {
+	font-size: 0;
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto 0 auto;
+	padding: 80px 0 120px 0;
+}
+
+.news-tabs input[type="radio"] {
+	display: none;
+}
+
+.news-tabs article {
+	display: none;
+	max-width: 840px;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+	display: block;
+}
+
+.news-tabs label {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #5C6881;
+	margin-right: 60px;
+	margin-bottom: 70px;
+}
+
+.news-tabs label:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0px;
+	height: 3px;
+	margin-top: 30px;
+	background-color: #FFE06E;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.news-tabs label:hover:after {
+	width: 70%;
+}
+
+.news-tabs label:not(:first-of-type) {
+	border-left: none;
+}
+
+.news-tabs input[type="radio"]:checked+label {
+	font-weight: 700;
+	color: #0F1A31;
+}
+
+.news-tabs input[type="radio"]:checked+label:after {
+	width: 100%;
+}
+
+.news-tabs__item {
+	margin-bottom: 32px;
+}
+
+.news-tabs__item:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.news-tabs__item span {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #888888;
+	margin-bottom: 8px;
+	display: inline-block;
+}
+
+.news-tabs__item h3 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 120%;
+	color: #16274A;
+	margin-bottom: 8px;
+}
+
+.news-tabs__item p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #1C1C1C;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.pagination-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.pagination-number,
+.pagination-button{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	color: #8B93A5;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+	width: 31px;
+	height: 30px;
+}
+
+.pagination-number.active {
+  font-weight: 700;
+	color: #16274A;
+}
+
+@media screen and (max-width: 1350px) {
+	.news-tabs {
+		padding: 20px 15px 60px 15px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.news-tabs label {
+		font-size: 14px;
+		margin-bottom: 50px;
+	}
+
+	.news-tabs label:after {
+		margin-top: 20px;
+	}
+
+	.news-tabs__item span {
+		font-size: 14px;
+	}
+
+	.news-tabs__item h3 {
+		font-size: 16px;
+	}
+
+	.news-tabs__item p {
+		font-size: 14px;
+	}
+
+}
