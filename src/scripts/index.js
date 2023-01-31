@@ -4,15 +4,13 @@ takeControlBurger();
 takeControlDirections();
 takeControlMap();
 
-const newsSwiper = new Swiper(".news-swiper", {
+const newsSwiper = new Swiper(".news__swiper", {
 	slidesPerView: "auto",
-	spaceBetween: 30,
+	spaceBetween: 20,
 	pagination: {
 		el: ".swiper-pagination",
+		clickable: true,
 	},
-  clickable: true,
-	mousewheel: false,
-	keyboard: true,
 });
 
 const projectSwiper = new Swiper(".project__swiper", {

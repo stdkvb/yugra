@@ -21,7 +21,7 @@ const paths = {
 		images: `${SRC_FOLDER_PATH}/files/images/*.{jpg,jpeg,png,gif,webp}`,
 		icons: `${SRC_FOLDER_PATH}/files/icons/*.svg`,
 		favicons: `${SRC_FOLDER_PATH}/files/favicons/*.ico`,
-		fontsFolder: `${SRC_FOLDER_PATH}/files/fonts`,
+		fontsFolder: `${SRC_FOLDER_PATH}/files/base/fonts`,
 		videos: `${SRC_FOLDER_PATH}/files/videos/*.{ogg,ogv,mp4,webm}`,
 		audio: `${SRC_FOLDER_PATH}/files/audio/*.{ogg,mp3,webm}`
 	},

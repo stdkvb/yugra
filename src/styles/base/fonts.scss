@@ -1,56 +1,4 @@
 @font-face {
-	font-family: 6500;
-	font-display: swap;
-	src: url("@fonts/6500.woff2") format("woff2"), url("@fonts/6500.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@mixin FontFamily65006500 {
-	font-family: 6500, sans-serif;
-	font-weight: 400;
-	line-height: 140%;
-}
-
-@font-face {
-	font-family: 6508;
-	font-display: swap;
-	src: url("@fonts/6508.woff2") format("woff2"), url("@fonts/6508.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@mixin FontFamily65086508 {
-	font-family: 6508, sans-serif;
-	font-weight: 400;
-	line-height: 140%;
-}
-
-@font-face {
-	font-family: 6509;
-	font-display: swap;
-	src: url("@fonts/6509.woff2") format("woff2"), url("@fonts/6509.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@mixin FontFamily65096509 {
-	font-family: 6509, sans-serif;
-	font-weight: 400;
-	line-height: 140%;
-}
-
-@font-face {
-	font-family: europedemi;
-	font-display: swap;
-	src: url("@fonts/europedemi-normal.woff2") format("woff2"), url("@fonts/europedemi-normal.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@mixin FontFamilyEuropedemiNormal {
-	font-family: europedemi, sans-serif;
-	font-weight: 400;
-	line-height: 140%;
-}
-
-@font-face {
 	font-family: europe;
 	font-display: swap;
 	src: url("@fonts/europe-bold.woff2") format("woff2"), url("@fonts/europe-bold.woff") format("woff");
@@ -60,19 +8,6 @@
 @mixin FontFamilyEuropeBold {
 	font-family: europe, sans-serif;
 	font-weight: 700;
-	line-height: 140%;
-}
-
-@font-face {
-	font-family: europe;
-	font-display: swap;
-	src: url("@fonts/europe-normal.woff2") format("woff2"), url("@fonts/europe-normal.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@mixin FontFamilyEuropeNormal {
-	font-family: europe, sans-serif;
-	font-weight: 400;
 	line-height: 140%;
 }
 

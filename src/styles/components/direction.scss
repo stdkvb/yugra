@@ -106,10 +106,6 @@
 }
 
 @media screen and (max-width: 1350px) {
-	.direction .presentation {
-		position: unset;
-	}
-
 	.direction {
 		padding: 60px 15px;
 	}
@@ -133,6 +129,10 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 20px 0px;
+	}
+
+	.direction__right-bar {
+		width: 100%;
 	}
 
 	.direction__content {

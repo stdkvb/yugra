@@ -73,17 +73,19 @@
 	display: block;
 }
 
-@media screen and (max-width: 991px) {
-	.accordion__item {
-		padding: 20px 10px;
-	}
-
+@media screen and (max-width: 1350px) {
 	.accordion__content {
 		margin-right: 44px;
 	}
 
 	.accordion__item_active .accordion__background-image {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.accordion__item {
+		padding: 20px 10px;
 	}
 }
 

@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-weight: 400;
-	font-family: EuropeNormal, sans-serif;
+	font-family: EuropeBold, sans-serif;
 	font-style: normal;
 }
 
@@ -34,11 +34,15 @@ a:focus {
 	border: dotted 1px #16274A;
 }
 
+.swiper-pagination {
+	position: unset !important;
+}
+
 .swiper-pagination-bullet {
-	width: 16px;
-	height: 16px;
+	width: 16px !important;
+	height: 16px !important;
 }
 
 .swiper-pagination-bullet-active {
-	background-color: #0F1A31;
+	background-color: #0F1A31 !important;
 }
