@@ -70,6 +70,38 @@ const navSwiper = new Swiper(".nav-bar", {
 	},
 });
 
+const newsInternalSwiper = new Swiper(".news-internal__swiper", {
+	direction: "horizontal",
+	slidesPerView: 4,
+	spaceBetween: 30,
+	breakpoints: {
+		360: {
+			slidesPerView: 1,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		},
+		690: {
+			slidesPerView: 2,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		},
+		1020: {
+			slidesPerView: 3,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		},
+		1351: {
+			direction: "vertical",
+		},
+	},
+});
+
 takeControlAccordion(".about-company", ".accordion__list", {
 	accordionItemSelector: ".accordion__item",
 	accordionItemTogglerSelector: ".accordion__toggle",
