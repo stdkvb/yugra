@@ -46,20 +46,20 @@
 							<h2>Отправить резюме</h2>
 							<form>
 								<label for="name">Фамиля Имя Отчество*</label>
-									<input type="text" id="name" placeholder="Иванов Иван Иванович">
+									<input type="text" id="name" placeholder="Иванов Иван Иванович" required>
 								<label for="email">Электронная почта*</label>
-									<input type="email" id="email" placeholder="example@mail.ru">
+									<input type="email" id="email" placeholder="example@mail.ru" required>
 								<label for="phone">Номер телефона</label>
 									<input type="tel" id="phone" placeholder="+7 (___) ___- __ - __">
 								<label for="department">Подразделение*</label>
-									<select id="department">
+									<select id="department" required>
 										<option value="" hidden>Выберите подразделение</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
 									</select>
 									<label for="department">Желаемая должность*</label>
-									<select id="department">
+									<select id="department" required>
 										<option value="" hidden>Выберите должность</option>
 										<option>1</option>
 										<option>2</option>
@@ -73,7 +73,7 @@
 										<input type="checkbox" id="checkbox">
 										<label for="checkbox"><span>Я даю свое согласие на </span>обработку моих персональных данных</label>
 									</div>
-									<button>Отправить заявку</button>
+									<button type="submit">Отправить заявку</button>
 							</form>
 							<div class="career__links">
 								<div>

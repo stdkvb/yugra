@@ -105,6 +105,7 @@
 	line-height: 150%;
 	margin-bottom: 20px;
 	border: solid 1px #888888;
+	outline: none;
 }
 
 .career__form span {
@@ -142,6 +143,12 @@ input[type="checkbox"] {
   color: #8a97a0;
 }
 
+.career__form option {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+}
+
 .career__form a {
 	display: block;
 	padding: 4px 0;
@@ -163,6 +170,34 @@ input[type="checkbox"] {
 	line-height: 150%;
 	border: none;
 	margin-top: 20px;
+}
+
+.career__form input:hover {
+	color: #6382C2;
+	border: solid 1px #16274A;
+}
+
+.career__form select:hover {
+	color: #6382C2;
+	border: solid 1px #16274A;
+}
+
+.career__form input:focus {
+	color: #6382C2;
+	border: solid 1px #16274A;
+}
+
+.career__form select:focus {
+	color: #6382C2;
+	border: solid 1px #16274A;
+}
+
+.career__form input:invalid {
+	border: solid 1px #C10000;
+}
+
+.career__form input:valid {
+	border: solid 1px #00C113;
 }
 
 .career__applicant {
@@ -280,7 +315,8 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 1350px) {
 	.career {
-	padding: 60px 15px;
+		padding: 60px 15px 0 15px;
+		margin-bottom: 60px;
 	}
 
 	.career__wrapper {
@@ -305,7 +341,11 @@ input[type="checkbox"] {
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
-		padding: 20px 10px;
+		padding: 20px 0 0 0;
+	}
+
+	.career__content {
+		padding: 0 10px;
 	}
 
 	.career__text h1 {
@@ -345,6 +385,10 @@ input[type="checkbox"] {
 	}
 
 	.career__form select {
+		font-size: 14px;
+	}
+
+	.career__form option {
 		font-size: 14px;
 	}
 
