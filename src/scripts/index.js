@@ -102,6 +102,18 @@ const newsInternalSwiper = new Swiper(".news-internal__swiper", {
 	},
 });
 
+const qualitySwiper = new Swiper(".quality__swiper", {
+	direction: "horizontal",
+	slidesPerView: "auto",
+	spaceBetween: 30,
+	breakpoints: {
+		991: {
+			direction: "vertical",
+			slidesPerView: 3,
+		}
+	}
+});
+
 takeControlAccordion(".about-company", ".accordion__list", {
 	accordionItemSelector: ".accordion__item",
 	accordionItemTogglerSelector: ".accordion__toggle",
