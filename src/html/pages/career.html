@@ -45,12 +45,21 @@
 						<div class="career__form">
 							<h2>Отправить резюме</h2>
 							<form>
-								<label for="name">Фамиля Имя Отчество*</label>
+								<div class="form__field">
+									<label for="name">Фамиля Имя Отчество*</label>
 									<input type="text" id="name" placeholder="Иванов Иван Иванович" required>
-								<label for="email">Электронная почта*</label>
+									<span class="form__error">Введите ваше имя</span>
+								</div>
+								<div class="form__field">
+									<label for="email">Электронная почта*</label>
 									<input type="email" id="email" placeholder="example@mail.ru" required>
-								<label for="phone">Номер телефона</label>
+									<span class="form__error">Введите ваш email</span>
+								</div>
+								<div class="form__field">
+									<label for="phone">Номер телефона</label>
 									<input type="tel" id="phone" placeholder="+7 (___) ___- __ - __">
+									<span class="form__error">Введите ваш номер телефона</span>
+								</div>
 								<label for="department">Подразделение*</label>
 									<select id="department" required>
 										<option value="" hidden>Выберите подразделение</option>
@@ -58,22 +67,22 @@
 										<option value="2">2</option>
 										<option value="3">3</option>
 									</select>
-									<label for="department">Желаемая должность*</label>
+								<label for="department">Желаемая должность*</label>
 									<select id="department" required>
 										<option value="" hidden>Выберите должность</option>
 										<option>1</option>
 										<option>2</option>
 										<option>3</option>
 									</select>
-									<label for="file">
-										<img src="@icons/clip.svg"> Прикрепить файл
-									</label>
-										<input type="file" id="file">
-									<div>
-										<input type="checkbox" id="checkbox">
+								<label for="file">
+									<img src="@icons/clip.svg"> Прикрепить файл
+								</label>
+									<input type="file" id="file">
+								<div>
+										<input type="checkbox" id="checkbox" required>
 										<label for="checkbox"><span>Я даю свое согласие на </span>обработку моих персональных данных</label>
-									</div>
-									<button type="submit">Отправить заявку</button>
+								</div>
+								<button type="submit">Отправить заявку</button>
 							</form>
 							<div class="career__links">
 								<div>

@@ -75,6 +75,8 @@
 .career__form form {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
 	border: solid 1px #16274A;
 	padding: 30px;
 	margin: 25px 0 40px 0;
@@ -83,6 +85,24 @@
 .career__form div {
 	display: flex;
 	align-items: center;
+}
+
+.form__field {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start !important;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.form__error {
+	color: red !important;
+	text-align: left;
+	font-size: 14px;
+	display: block;
+	display: none;
+	width: 100%;
+	margin-top: 10px;
 }
 
 .career__form label {
@@ -103,9 +123,9 @@
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
-	margin-bottom: 20px;
 	border: solid 1px #888888;
 	outline: none;
+	width: 100%;
 }
 
 .career__form span {
@@ -128,6 +148,11 @@ input[type="checkbox"] {
 	width: 20px;
 	height: 20px;
 	margin: 0 12px 20px 0;
+}
+
+input[type="checkbox"]:checked {
+	border: solid 1px #FFD130;
+	background: #FFD130;
 }
 
 .career__form select {
@@ -192,12 +217,16 @@ input[type="checkbox"] {
 	border: solid 1px #16274A;
 }
 
-.career__form input:invalid {
+.career__form input:invalid:not(:placeholder-shown):not(:focus) {
 	border: solid 1px #C10000;
 }
 
-.career__form input:valid {
+.career__form input:valid:not(:placeholder-shown) {
 	border: solid 1px #00C113;
+}
+
+.career__form input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
 }
 
 .career__applicant {

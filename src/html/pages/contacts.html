@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+	@@include('meta/_head.html', {title: 'Контакты'})
+	<body>
+		@@include('components/header/_index.html', {logo: 'logo-blue.png'})
+		<main>
+			<section class="contacts">
+				<div class="contacts__wrapper">
+					<h1>Контакты</h1>
+					@@include('components/contacts/_index.html')
+				</div>
+			</section>
+		</main>
+		@@include('components/footer/_index.html')
+
+		@@include('meta/_includeScripts.html')
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+	@@include('meta/_head.html', {title: 'Партнёрам'})
+	<body>
+		@@include('components/header/_index.html', {logo: 'logo-blue.png'})
+		<main>
+			<section class="partner">
+				<div class="partner__wrapper">
+					<h1>Партнёрам</h1>
+					@@include('components/contacts/_index.html')
+				</div>
+			</section>
+		</main>
+		@@include('components/footer/_index.html')
+
+		@@include('meta/_includeScripts.html')
+	</body>
+</html>
