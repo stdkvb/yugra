@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+	@@include('meta/_head.html', {title: 'Страница не найдена'})
+	<body>
+		@@include('components/header/_index.html', {logo: 'logo-blue.png'})
+		<main>
+			<section class="error-page">
+				<div class="error-page__wrapper">
+					<h1>404</h1>
+					<h2>Страница не найдена</h2>
+					<p>Возможно она была удалена или перемещена на новый адрес</p>
+					<button>Вернуться на главную</button>
+				</div>
+			</section>
+		</main>
+		@@include('components/footer/_index.html')
+
+		@@include('meta/_includeScripts.html')
+	</body>
+</html>
