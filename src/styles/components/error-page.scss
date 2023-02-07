@@ -35,13 +35,14 @@
 	margin-top: 10px;
 }
 
-.error-page button {
+.error-page a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 249px;
 	height: 54px;
 	background-color: #FFD130;
+	clip-path: polygon(6% 0, 100% 0, 100% 60%, 94% 100%, 0 100%, 0 40%);
 	color: #36260E !important;
 	font-weight: 400;
 	font-size: 18px;
@@ -71,7 +72,7 @@
 }
 
 @media screen and (max-width: 470px) {
-	.error-page button {
+	.error-page a {
 		width: 100%;
 	}
 }

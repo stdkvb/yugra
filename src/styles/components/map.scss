@@ -66,7 +66,8 @@
 	height: 45px;
 	background-color: transparent;
 	border: none;
-	background-image: url('../../../files/icons/geography-button.svg');
+	background-color: #FFD130;
+	clip-path: polygon(6% 0, 100% 0, 100% 60%, 94% 100%, 0 100%, 0 40%);
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 16px;
@@ -98,6 +99,10 @@
 		left: 50% !important;
 		transform: translate(-50%, -50%);
 		width: 330px;
+	}
+
+	.map__button {
+		width: 100%;
 	}
 }
 

@@ -45,6 +45,10 @@
 	transition: 0.7s;
 }
 
+.accordion-icon:hover {
+	opacity: .6;
+}
+
 .accordion__content {
 	overflow: hidden;
 	height: 0;

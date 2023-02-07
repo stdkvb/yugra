@@ -3,6 +3,7 @@
 	background-color: #F8F8F8;
 	display: flex;
 	flex-direction: column;
+	gap: 80px;
 	align-items: center;
 	padding: 80px 0 120px 0;
 }
@@ -20,10 +21,20 @@
 	color: #16274A;
 }
 
+.partner h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #16274A;
+}
+
+.partner form {
+	max-width: 840px;
+}
+
 @media screen and (max-width: 1350px) {
 	.partner {
-		padding: 60px 15px 0 15px;
-		margin-bottom: 60px;
+		padding: 60px 15px 60px 15px;
 	}
 
 	.partner__wrapper {

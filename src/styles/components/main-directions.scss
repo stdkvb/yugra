@@ -54,15 +54,17 @@
 	}
 }
 
+@media screen and (max-width: 1140px) {
+	.main-directions h3 {
+		font-size: 30px;
+	}
+}
+
 @media screen and (max-width: 991px) {
 
 	.main-directions h2 {
 		font-size: 30px;
 		margin-bottom: 20px;
-	}
-
-	.main-directions h3 {
-		font-size: 30px;
 	}
 
 	.main-directions__container div:first-of-type {

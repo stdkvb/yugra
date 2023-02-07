@@ -42,9 +42,9 @@
 							<p>В случае отсутствия вакансии, которая Вас заинтересовала в данный момент, Вы можете переслать свое резюме, заполнив ФОРМУ. Возможно, в будущем мы сможем Вам предложить достойную позицию в нашей компании.</p>
 							<p>Мы предлагаем: оформление по ТК РФ, соц. пакет, полный рабочий день на территории работодателя.</p>
 						</div>
-						<div class="career__form">
+						<div class="form">
 							<h2>Отправить резюме</h2>
-							<form>
+							<form id="form">
 								<div class="form__field">
 									<label for="name">Фамиля Имя Отчество*</label>
 									<input type="text" id="name" placeholder="Иванов Иван Иванович" required>
@@ -56,8 +56,8 @@
 									<span class="form__error">Введите ваш email</span>
 								</div>
 								<div class="form__field">
-									<label for="phone">Номер телефона</label>
-									<input type="tel" id="phone" placeholder="+7 (___) ___- __ - __">
+									<label for="phone">Номер телефона*</label>
+									<input type="tel" id="phone" placeholder="+7 (___) ___- __ - __" required>
 									<span class="form__error">Введите ваш номер телефона</span>
 								</div>
 								<label for="department">Подразделение*</label>
@@ -74,13 +74,12 @@
 										<option>2</option>
 										<option>3</option>
 									</select>
-								<label for="file">
-									<img src="@icons/clip.svg"> Прикрепить файл
-								</label>
-									<input type="file" id="file">
-								<div>
-										<input type="checkbox" id="checkbox" required>
-										<label for="checkbox"><span>Я даю свое согласие на </span>обработку моих персональных данных</label>
+								<div class="input-file-container">
+									<input class="file-input" type="file">
+								</div>
+								<div class="form__checkbox">
+									<input class="styled-checkbox" type="checkbox" id="checkbox" required>
+									<label for="checkbox"><span>Я даю свое согласие на <a>обработку моих персональных данных</a></span></label>
 								</div>
 								<button type="submit">Отправить заявку</button>
 							</form>
@@ -129,6 +128,7 @@
 			</section>
 		</main>
 		@@include('components/footer/_index.html')
+		@@include('components/modal/_index.html')
 
 		@@include('meta/_includeScripts.html')
 	</body>

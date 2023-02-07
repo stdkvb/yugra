@@ -6,12 +6,56 @@
 		<main>
 			<section class="partner">
 				<div class="partner__wrapper">
-					<h1>Партнёрам</h1>
+					<h1>Партнерам</h1>
 					@@include('components/contacts/_index.html')
+				</div>
+				<div class="partner__wrapper form">
+					<h2>Задать вопрос</h2>
+					<form id="form">
+						<div class="form__field">
+							<label for="name">Фамиля Имя Отчество*</label>
+							<input type="text" id="name" placeholder="Иванов Иван Иванович" required>
+							<span class="form__error">Введите ваше имя</span>
+						</div>
+						<div class="form__field">
+							<label for="company">Организация</label>
+							<input type="text" id="company" placeholder="Название организации">
+						</div>
+						<div class="form__field">
+							<label for="adress">Должность</label>
+							<input type="text" id="position" placeholder="Название должности">
+						</div>
+						<div class="form__field">
+							<label for="position">Почтовый адрес</label>
+							<input type="text" id="position" placeholder="г. Москва, ул. Пушкина, д. 48">
+						</div>
+						<div class="form__field">
+							<label for="email">Электронная почта*</label>
+							<input type="email" id="email" placeholder="example@mail.ru" required>
+							<span class="form__error">Введите ваш email</span>
+						</div>
+						<div class="form__field">
+							<label for="subject">Тема сообщения</label>
+							<input type="text" id="subject" placeholder="Введите тему сообщения">
+						</div>
+						<div class="form__field">
+							<label for="message">Текст сообщения</label>
+							<input type="text" id="message" placeholder="Введите текст сообщения">
+						</div>
+						<div class="input-file-container">
+							<input class="file-input" type="file">
+						</div>
+						<div class="form__checkbox">
+							<input class="styled-checkbox" type="checkbox" id="checkbox" required>
+							<label for="checkbox"><span>Я даю свое согласие на <a>обработку моих персональных данных</a></span></label>
+						</div>
+						<button type="submit">Отправить заявку</button>
+					</form>
 				</div>
 			</section>
 		</main>
 		@@include('components/footer/_index.html')
+		@@include('components/modal/_index.html')
 
 		@@include('meta/_includeScripts.html')
 	</body>
