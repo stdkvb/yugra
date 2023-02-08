@@ -19,14 +19,14 @@
 	max-width: 840px;
 }
 
-.project__title {
+.project__content h2 {
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 120%;
 	color: #16274A;
 }
 
-.project__city {
+.project__content span {
 	display: inline-block;
 	margin: 20px 0;
 	font-weight: 400;
@@ -35,8 +35,7 @@
 	color: #888888;
 }
 
-.project__text {
-	display: inline-block;
+.project__content p {
 	margin: 0 0 10px 0;
 	font-weight: 400;
 	font-size: 18px;
@@ -44,7 +43,7 @@
 	color: #16274A;
 }
 
-.project__customer {
+.project__content h3 {
 	display: inline-block;
 	margin: 10px 0;
 	font-weight: 700;
@@ -53,13 +52,7 @@
 	color: #16274A;
 }
 
-.project__adress {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.project__image {
+.project__content img {
 	width: 100%;
 	margin-top: 20px;
 }
@@ -86,21 +79,21 @@
 	box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
-.project__slide-date {
+.project__slide span {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
 	color: #888888;
 }
 
-.project__slide-title {
+.project__slide h3 {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
 	color: #16274A;
 }
 
-.project__slide-button {
+.project__slide a {
 	width: fit-content;
 	font-weight: 400;
 	font-size: 18px;
@@ -121,7 +114,7 @@
 
 	.project__swiper {
 		width: 100%;
-		padding: 0 15px;
+		padding: 0 15px !important;
 	}
 
 	.project__wrapper {
@@ -134,21 +127,32 @@
 	}
 }
 
-@media screen and (max-width: 360px) {
-	.project__title {
+@media screen and (max-width: 575px) {
+	.project__content h2 {
 		font-size: 21px;
 	}
 
-	.project__city {
+	.project__content span {
 		font-size: 14px;
 	}
 
-	.project__text {
+	.project__content p {
 		font-size: 14px;
 	}
 
-	.project__customer {
+	.project__content h3 {
 		font-size: 16px;
 	}
 
+	.project__slide span {
+		font-size: 14px;
+	}
+
+	.project__slide h3 {
+		font-size: 14px;
+	}
+
+	.project__slide a {
+		font-size: 14px;
+	}
 }

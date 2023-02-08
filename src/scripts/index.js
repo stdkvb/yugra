@@ -6,7 +6,7 @@ takeControlMap();
 
 const newsSwiper = new Swiper(".news__swiper", {
 	slidesPerView: "auto",
-	spaceBetween: 20,
+	spaceBetween: 30,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,

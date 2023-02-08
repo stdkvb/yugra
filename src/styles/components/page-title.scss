@@ -3,8 +3,8 @@
 	display: flex;
 	justify-content: center;
 	height: 305px;
-	background-size: cover;
-	background-position: right -285px;
+	background-size: auto ;
+	background-position: right;
 }
 
 .page-title__wrapper {
@@ -65,20 +65,15 @@
 	}
 }
 
+@media screen and (max-width: 991px) {
+	.page-title {
+		height: 156px;
+		background-size: auto 100%;
+		background-position: center;
+	}
+}
 @media screen and (max-width: 500px) {
 	.page-title {
-		background-position: right -28px;
-	}
-}
-
-@media screen and (min-width: 500px) {
-	.page-title {
-		background-position: right -60px;
-	}
-}
-
-@media screen and (min-width: 800px) {
-	.page-title {
-		background-position: right -355px;
+		background-position: -418px;
 	}
 }

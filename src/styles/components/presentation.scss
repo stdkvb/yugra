@@ -16,9 +16,12 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 26px;
-	font-weight: 700;
-	line-height: 180%;
 	color: #FFFFFF;
+}
+
+.presentation__header h2 {
+	font-weight: 700;
+	line-height: 120%;
 }
 
 .presentation__button {
@@ -52,10 +55,12 @@
 .presentation__list-item h3 {
 	height: 60px;
 	font-size: 54px;
+	font-weight: 700;
 }
 
 .presentation__list-item h4 {
 	font-size: 20px;
+	font-weight: 700;
 }
 
 .presentation__list-item h5 {
@@ -74,9 +79,12 @@
 	justify-content: space-between;
 	align-items: left;
 	padding: 20px 26px;
+	color: #FFFFFF;
+}
+
+.presentation__footer h2 {
 	font-weight: 700;
 	line-height: 180%;
-	color: #FFFFFF;
 }
 
 .presentation__footer div {

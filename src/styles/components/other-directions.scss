@@ -4,7 +4,7 @@
 .other-directions__wrapper {
 	width: 1350px;
 	margin: 0 auto;
-	padding: 80px 0;
+	padding: 80px 0 120px 0;
 }
 
 .other-directions h2 {
@@ -35,9 +35,17 @@
 	justify-content: center;
 	width: 157px;
 	height: 54px;
-	border: solid 2px #16274A;
 	margin-top: 40px;
 	color: #16274a;
+	background-image: url(@icons/other-directions-button.svg);
+	background-size: 100%;
+}
+
+.other-directions a:hover {
+	color: #FFFFFF;
+	clip-path: polygon(6% 0,100% 0,100% 75%,94% 100%,0 100%,0 25%);
+	background-color: #16274a;
+	opacity: unset;
 }
 
 .other-directions .accordion__list {
@@ -77,11 +85,11 @@
 
 	.other-directions p {
 		font-size: 14px;
+		margin-right: 44px;
 	}
 
 	.other-directions .accordion__content {
-		margin-top: 10px;
-		margin-right: 44px;
+		margin: 10px 0 0 0;
 	}
 
 	.other-directions .accordion__content a {
@@ -95,10 +103,13 @@
 	.other-directions .accordion__item_active {
 		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 	}
-}
 
-@media screen and (max-width: 400px) {
 	.other-directions .accordion__content a {
-		width: 100%;
+		width: 310px;
+		background-image: url(@icons/other-directions-button-mobile.svg);
+	}
+
+	.other-directions .accordion__content a:hover {
+		clip-path: polygon(3% 0,100% 0,100% 78%,97% 100%,0 100%,0 27%);
 	}
 }
