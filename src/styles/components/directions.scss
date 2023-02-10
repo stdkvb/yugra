@@ -22,15 +22,21 @@
 	min-height: 100px;
 }
 
+.directions__direction:hover {
+	opacity: 0.7;
+}
+
+.directions__direction_active:hover {
+	opacity: 1;
+}
+
 .directions__header {
 	display: flex;
 	justify-content: space-between;
 	margin: 25px 0 25px 0;
 	align-items: center;
-}
-
-.directions__header:hover {
 	cursor: pointer;
+	transition: all 0.2s ease;
 }
 
 .directions__background-image {
@@ -72,8 +78,10 @@
 	padding: 30px 30px 30px 30px;
 	background-repeat: no-repeat;
 	display: none;
-	border: solid 2px #FFFFFF;
-	border-top-left-radius: 30px;
+	background-image: url(@icons/directions-about-border.svg);
+	background-size: cover;
+	border-bottom: solid 1px #FFFFFF;
+	border-right: solid 1px #FFFFFF;
 }
 
 .directions__about_active {
@@ -90,13 +98,12 @@
 }
 
 .directions__about-text {
-	margin: 10px 0 30px 0;
+	margin: 10px 0 20px 0;
 	padding: 0;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
 	color: #FFFFFF;
-	margin-top: 10px;
 }
 
 .directions__about-button {
@@ -110,6 +117,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	clip-path: polygon(6% 0,100% 0,100% 75%,94% 100%,0 100%,0 25%);
+	transition: all 0.5s ease;
+}
+
+.directions__about-button:hover {
+	background-image: unset;
+	color: #16274A;
+	background: #FFD130;
 }
 
 @media screen and (max-width: 1110px) {

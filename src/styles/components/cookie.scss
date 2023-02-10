@@ -16,6 +16,11 @@
 
 .cookie a {
 	color: #16274A;
+	transition: all 0.4s ease-in-out;
+}
+
+.cookie a:hover {
+	color: #6382C2;
 }
 
 .cookie__container {
@@ -37,6 +42,11 @@
 	font-size: 18px;
 	line-height: 150%;
 	border: none;
+	transition: all 0.4s ease-in-out;
+}
+
+.cookie__button:hover {
+	background-color: #FFF6D6;
 }
 
 @media screen and (max-width: 1380px) {
@@ -46,11 +56,15 @@
 }
 
 @media screen and (max-width: 991px) {
+	.cookie{
+		width: 100%;
+		padding: 38px 0 38px 0;
+	}
+
 	.cookie__container {
 		flex-direction: column;
 		gap: 20px;
 	}
-
 }
 
 @media screen and (max-width: 500px) {

@@ -47,6 +47,11 @@
 	font-size: 18px;
 	line-height: 150%;
 	color: #16274A;
+	transition: all 0.4s ease-in-out;
+}
+
+.contacts__info a:hover {
+	opacity: 0.7;
 }
 
 .contacts__info span {
@@ -63,6 +68,11 @@
 	color: #16274A;
 	width: 100%;
 	max-width: unset;
+	transition: all 0.4s ease-in-out;
+}
+
+.contacts__info span:hover {
+	opacity: 0.7;
 }
 
 .contacts__info button {
@@ -78,6 +88,11 @@
 	font-size: 18px;
 	line-height: 150%;
 	border: none;
+	transition: all 0.4s ease-in-out;
+}
+
+.contacts__info button:hover {
+	background-color: #FFF6D6;
 }
 
 .contacts__map {

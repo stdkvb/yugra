@@ -45,6 +45,13 @@
 	background-repeat: no-repeat;
 	background-size: 130%;
 	background-position: center;
+	filter: brightness(100%);
+	transition: all 0.4s ease;
+
+}
+
+.main-directions__item:hover {
+	filter: brightness(70%);
 }
 
 @media screen and (max-width: 1380px) {

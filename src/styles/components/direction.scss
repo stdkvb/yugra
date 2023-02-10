@@ -95,6 +95,11 @@
 	color: #1C1C1C;
 }
 
+.direction__list-item a:hover {
+	opacity: 0.7;
+	transition: all 0.4s ease;
+}
+
 .direction__list-item:nth-of-type(2n) {
 	background-color: #FFF6D6;
 }

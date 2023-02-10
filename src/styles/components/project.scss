@@ -79,6 +79,11 @@
 	box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
+.project__slide:hover {
+	opacity: 0.7;
+	transition: all 0.2s ease;
+}
+
 .project__slide span {
 	font-weight: 400;
 	font-size: 18px;

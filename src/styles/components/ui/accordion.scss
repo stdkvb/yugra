@@ -39,14 +39,19 @@
 	font-size: 20px;
 	line-height: 24px;
 	text-transform: unset;
+	transition: all 0.2s ease;
+}
+
+.accordion__link:hover {
+	opacity: 0.7;
 }
 
 .accordion-icon {
-	transition: 0.7s;
+	transition: all 0.4s ease;
 }
 
 .accordion-icon:hover {
-	opacity: .6;
+	opacity: 0.7;
 }
 
 .accordion__content {

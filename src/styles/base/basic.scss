@@ -12,13 +12,17 @@ html {
 	max-width: 1920px;
 }
 
+main {
+	min-height: calc(100vh - 584px);
+	background-color: #f8f8f8;
+}
+
 .body_overflow-hidden {
 	overflow: hidden;
 }
 
 button:hover {
 	cursor: pointer;
-	opacity: 0.6;
 }
 
 a {
@@ -26,7 +30,6 @@ a {
 }
 
 a:hover {
-	opacity: 0.6;
 	cursor: pointer;
 }
 

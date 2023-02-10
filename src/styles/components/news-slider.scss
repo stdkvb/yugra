@@ -26,6 +26,12 @@
 	background: transparent;
 	border: none;
 	border-bottom: solid 2px #16274A;
+	transition: all 0.4s ease;
+}
+
+.news__button:hover {
+	color: #6382C2;
+	border-bottom: solid 2px #6382C2;
 }
 
 .news-slider {
@@ -49,8 +55,13 @@
 
 .news__card img {
 	width: 100%;
-	max-width: 330px;
-	max-height: 210px;
+	filter: brightness(100%);
+	transition: all 0.4s ease;
+	margin-bottom: 20px;
+}
+
+.news__card:hover img {
+	filter: brightness(70%);
 }
 
 .news__card span {

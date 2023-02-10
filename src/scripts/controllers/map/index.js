@@ -8,6 +8,9 @@ const takeControlMap = () => {
 			});
 			const card = this.previousElementSibling;
 			card.classList.toggle("map__map-card_active");
+			if (window.innerWidth < 1350) {
+				document.body.style.overflow = 'hidden';
+			}
 		});
 		const map = document.querySelector(".map__map-image");
 		map.onclick = function () {
@@ -15,6 +18,7 @@ const takeControlMap = () => {
 			cardActive.forEach((elem) => {
 				elem.classList.remove("map__map-card_active");
 			});
+			document.body.style.overflow = 'unset';
 		};
 	});
 };

@@ -41,6 +41,7 @@
 	color: #16274A;
 	text-align: center;
 	cursor: pointer;
+	transition: all 0.4s ease-in-out;
 }
 
 .header__nav-link:after {
@@ -89,6 +90,11 @@
 	font-size: 18px;
 	line-height: 150%;
 	border: none;
+	transition: all 0.4s ease-in-out;
+}
+
+.header__button:hover {
+	background-color: #FFF6D6;
 }
 
 .header__phone {

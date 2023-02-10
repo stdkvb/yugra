@@ -39,11 +39,12 @@
 	color: #16274a;
 	background-image: url(@icons/other-directions-button.svg);
 	background-size: 100%;
+	clip-path: polygon(6% 0,100% 0,100% 75%,94% 100%,0 100%,0 25%);
+	transition: all 0.4s ease;
 }
 
 .other-directions a:hover {
 	color: #FFFFFF;
-	clip-path: polygon(6% 0,100% 0,100% 75%,94% 100%,0 100%,0 25%);
 	background-color: #16274a;
 	opacity: unset;
 }
