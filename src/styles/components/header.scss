@@ -199,6 +199,7 @@
 	.header__phone {
 		display: block;
 		grid-area: phone;
+		margin-left: -30px;
 	}
 
 	.header__phone_white {
@@ -214,7 +215,7 @@
 		background-image: url('../../../files/icons/close-blue.svg');
 	}
 
-	.header__burger-button_active_white {
+	.header__burger-button_white_active {
 		background-image: url('../../../files/icons/close-white.svg');
 	}
 

@@ -14,8 +14,11 @@ const takeControlBurger = () => {
 			headerMenu.classList.add("header__menu_active");
 			headerMenu.parentElement.classList.add("header__wrapper_active");
 			header.classList.add("header_blur");
-			burgerButton.classList.add("header__burger-button_active");
-			burgerButton.classList.add("header__burger-button_white_active");
+			if (burgerButton.classList.contains("header__burger-button_white")) {
+				burgerButton.classList.add("header__burger-button_white_active");
+			} else {
+				burgerButton.classList.add("header__burger-button_active");
+			}
 			document.body.classList.add("body_overflow-hidden");
 		}
 	});

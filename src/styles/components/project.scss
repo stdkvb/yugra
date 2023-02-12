@@ -19,7 +19,7 @@
 	max-width: 840px;
 }
 
-.project__content h2 {
+.project__content h1 {
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 120%;
@@ -133,7 +133,7 @@
 }
 
 @media screen and (max-width: 575px) {
-	.project__content h2 {
+	.project__content h1 {
 		font-size: 21px;
 	}
 

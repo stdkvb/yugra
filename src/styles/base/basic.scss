@@ -15,6 +15,9 @@ html {
 main {
 	min-height: calc(100vh - 584px);
 	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .body_overflow-hidden {

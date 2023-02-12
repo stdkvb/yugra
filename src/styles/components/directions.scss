@@ -1,4 +1,5 @@
 .directions {
+	min-height: 720px;
 	max-width: 1920px;
 	padding-top: 200px;
 	padding-bottom: 120px;
@@ -22,10 +23,6 @@
 	min-height: 100px;
 }
 
-.directions__direction:hover {
-	opacity: 0.7;
-}
-
 .directions__direction_active:hover {
 	opacity: 1;
 }
@@ -35,17 +32,26 @@
 	justify-content: space-between;
 	margin: 25px 0 25px 0;
 	align-items: center;
-	cursor: pointer;
 	transition: all 0.2s ease;
 }
 
 .directions__background-image {
 	position: absolute;
 	left: -21%;
-	bottom: -120px;
+	top: -200px;
 	z-index: -2;
 	max-width: 1920px;
 	display: none;
+	animation: shows 0.5s;
+}
+
+@keyframes shows {
+	from {
+	opacity: 0;
+	}
+	to {
+	opacity: 1;
+	}
 }
 
 .directions__background-image_active {
@@ -58,6 +64,12 @@
 	font-size: 32px;
 	line-height: 120%;
 	color: rgba(255, 255, 255, 0.7);
+	transition: all 0.4s ease;
+}
+
+.directions__direction-title:hover:not(.directions__direction-title_active) {
+	opacity: 0.7;
+	cursor: pointer;
 }
 
 .directions__direction-button {
@@ -67,7 +79,12 @@
 	border: none;
 	background-color: transparent;
 	background-image: url('../../../files/icons/accordeon-arrow-white.svg');
-	transition: 0.5s;
+	transition: all 0.4s ease;
+	position: relative;
+}
+
+.directions__direction-button:hover:not(.directions__direction-button_active) {
+	background-image: url('../../../files/icons/accordeon-arrow-hover.svg');
 }
 
 .directions__direction-button_active {
@@ -107,9 +124,10 @@
 }
 
 .directions__about-button {
-	width: 157px;
+	width: 158px;
 	height: 54px;
 	background-image: url('../../../files/icons/directions-button.svg');
+	background-repeat: no-repeat;
 	color: #FFD130;
 	font-weight: 500;
 	font-size: 18px;
@@ -136,6 +154,10 @@
 @media screen and (max-width: 1020px) {
 	.directions {
 		padding-bottom: 60px;
+	}
+
+	.directions__background-image {
+		top: 0;
 	}
 }
 

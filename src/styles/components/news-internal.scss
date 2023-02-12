@@ -67,7 +67,7 @@
 
 .news-internal__slide {
 	width: 100%;
-	max-height: 277px;
+	max-height: 200px;
 	height: fit-content;
 	padding: 20px;
 	display: flex;
@@ -99,12 +99,12 @@
 	margin: 0;
 }
 
-.news-internal__slide p {
+.news-internal__slide a {
+	width: fit-content;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 150%;
-	color: #16274A;
-	margin: 0;
+	color: #888888;
 }
 
 .news-internal__pagination {
@@ -170,7 +170,7 @@
 		font-size: 14px;
 	}
 
-	.news-internal__slide p {
-		font-size: 12px;
+	.project__slide a {
+		font-size: 14px;
 	}
 }

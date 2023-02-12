@@ -1,22 +1,24 @@
-<div class="nav-bar swiper">
-	<nav class="nav-bar__wrapper swiper-wrapper">
-		<div class="nav-bar__slide swiper-slide">
-			<a class="nav-bar__link nav-bar__link_active" href="#">@@link1</a>
+<div class="nav-bar">
+	<div class="nav-bar__wrapper swiper">
+		<nav class="swiper-wrapper">
+			<div class="nav-bar__slide swiper-slide">
+				<a class="nav-bar__link nav-bar__link_active" href="#">@@link1</a>
+			</div>
+			<div class="nav-bar__slide swiper-slide">
+				<a class="nav-bar__link " href="#">@@link2</a>
+			</div>
+			<div class="nav-bar__slide swiper-slide">
+				<a class="nav-bar__link" href="#">@@link3</a>
+			</div>
+			@@if (context.link4) {
+			<div class="nav-bar__slide swiper-slide">
+				<a class="nav-bar__link" href="#">@@link4</a>
+			</div>
+			}
+		</nav>
+		<div class="nav-bar__button swiper-button-prev"><img src="@icons/nav-bar-button-prev.svg"></img></div>
+		<div class="nav-bar__button swiper-button-next"><img src="@icons/nav-bar-button-next.svg"></img></div>
 		</div>
-		<div class="nav-bar__slide swiper-slide">
-			<a class="nav-bar__link " href="#">@@link2</a>
-		</div>
-		<div class="nav-bar__slide swiper-slide">
-			<a class="nav-bar__link" href="#">@@link3</a>
-		</div>
-		@@if (context.link4) {
-		<div class="nav-bar__slide swiper-slide">
-			<a class="nav-bar__link" href="#">@@link4</a>
-		</div>
-		}
-	</nav>
-	<div class="nav-bar__button swiper-button-prev"><img src="@icons/nav-bar-button-prev.svg"></img></div>
-	<div class="nav-bar__button swiper-button-next"><img src="@icons/nav-bar-button-next.svg"></img></div>
 	</div>
 </div>
 

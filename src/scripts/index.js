@@ -67,7 +67,7 @@ const projectSwiper = new Swiper(".project__swiper", {
 	},
 });
 
-const navSwiper = new Swiper(".nav-bar", {
+const navSwiper = new Swiper(".nav-bar__wrapper", {
 	slidesPerView: "auto",
 	spaceBetween: 24,
 	navigation: {

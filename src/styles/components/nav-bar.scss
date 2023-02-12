@@ -1,12 +1,16 @@
 .nav-bar {
-	max-width: 1350px;
 	display: flex;
 	justify-content: center;
+	background-color: #FFFFFF;
+}
+
+.nav-bar__wrapper {
+	width: 1350px;
 	height: 87px;
 	padding: 0 15px !important;
 }
 
-.nav-bar__wrapper {
+.nav-bar .swiper__wrapper {
 	display: flex;
 	align-items: center;
 }
@@ -92,10 +96,5 @@
 @media screen and (max-width: 991px) {
 	.nav-bar__link {
 		font-size: 14px;
-	}
-
-	.nav-bar__link:hover {
-		font-size: 14px;
-		font-weight: 700;
 	}
 }
