@@ -122,7 +122,6 @@ const qualitySwiper = new Swiper(".quality__swiper", {
 	breakpoints: {
 		991: {
 			direction: "vertical",
-			slidesPerView: "auto",
 			navigation: {
 				prevEl: ".swiper-button-prev-unique",
 				nextEl: ".swiper-button-next-unique",

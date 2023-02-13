@@ -28,16 +28,90 @@ const takeControlForm = () => {
 		}
 	});
 
+	document.querySelectorAll(".dropdown").forEach((dropdownWrapper) => {
+		const dropdownBtn = dropdownWrapper.querySelector(".dropdown__button");
+		const dropdownList = dropdownWrapper.querySelector(".dropdown__list");
+		const dropdownItems = dropdownList.querySelectorAll(".dropdown__list-item");
+		const dropdownInput = dropdownWrapper.querySelector(".dropdown__input_hidden");
+
+		dropdownBtn.addEventListener("click", function () {
+			dropdownList.classList.toggle("dropdown__list_visible");
+			this.classList.toggle("dropdown__button_active");
+		});
+
+		dropdownItems.forEach((listItem) => {
+			listItem.addEventListener("click", function (e) {
+				dropdownItems.forEach((el) => {
+					el.classList.remove("dropdown__list-item_active");
+				});
+				e.target.classList.add("dropdown__list-item_active");
+				dropdownBtn.innerText = this.innerText;
+				dropdownInput.value = this.dataset.value;
+				dropdownList.classList.remove("dropdown__list_visible");
+			});
+		});
+
+		document.addEventListener("click", (e) => {
+			if (e.target !== dropdownBtn) {
+				dropdownBtn.classList.remove("dropdown__button_active");
+				dropdownList.classList.remove("dropdown__list_visible");
+			}
+		});
+
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "Tab" || e.key === "Escape") {
+				dropdownBtn.classList.remove("dropdown__button_active");
+				dropdownList.classList.remove("dropdown__list_visible");
+			}
+		});
+	});
+
+	document.querySelectorAll(".dropdown_with-chk").forEach((dropdownWrapper) => {
+		const dropdownBtn = dropdownWrapper.querySelector(".dropdown_with-chk__button");
+		const dropdownList = dropdownWrapper.querySelector(".dropdown_with-chk__list");
+		const dropdownItems = dropdownList.querySelectorAll(".dropdown_with-chk__list-item");
+
+		dropdownBtn.addEventListener("click", function () {
+			dropdownList.classList.toggle("dropdown_with-chk__list_visible");
+			this.classList.toggle("dropdown_with-chk__button_active");
+		});
+
+		dropdownItems.forEach((listItem) => {
+			listItem.addEventListener("click", (e) => {
+				e.target.classList.toggle("dropdown_with-chk__list-item_active");
+			});
+		});
+
+		document.addEventListener("click", (e) => {
+			if (
+				e.target !== dropdownBtn &&
+				e.target !== dropdownItems &&
+				!e.target.classList.contains("dropdown_with-chk__list-item") &&
+				!e.target.classList.contains("dropdown_with-chk__list-item_label")
+			) {
+				dropdownBtn.classList.remove("dropdown_with-chk__button_active");
+				dropdownList.classList.remove("dropdown_with-chk__list_visible");
+			}
+		});
+
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "Tab" || e.key === "Escape") {
+				dropdownBtn.classList.remove("dropdown_with-chk__button_active");
+				dropdownList.classList.remove("dropdown_with-chk__list_visible");
+			}
+		});
+	});
+
 	const fileInput = document.querySelector(".input-file-container");
 	if (fileInput !== null) {
-				fileInput.children[0].insertAdjacentHTML(
-					"afterend",
-					'<img src="./files/icons/clip.svg"><div class="file-button">Прикрепить файл</div><span class="file-name"></span>'
-				);
-				fileInput.children[0].addEventListener("change", function () {
-					const splitFileName = this.value.split(/\\/);
-					fileInput.children[3].innerText = splitFileName[splitFileName.length - 1];
-				});
+		fileInput.children[0].insertAdjacentHTML(
+			"afterend",
+			'<img src="./files/icons/clip.svg"><div class="file-button">Прикрепить файл</div><span class="file-name"></span>'
+		);
+		fileInput.children[0].addEventListener("change", function () {
+			const splitFileName = this.value.split(/\\/);
+			fileInput.children[3].innerText = splitFileName[splitFileName.length - 1];
+		});
 	}
 };
 

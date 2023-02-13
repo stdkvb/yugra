@@ -75,6 +75,11 @@
 	color: #16274A;
 }
 
+.quality__slide img {
+	max-width: 275px;
+	max-height: 374px;
+}
+
 .quality__swiper-buttons {
 	display: flex;
 	justify-content: center;
@@ -85,10 +90,19 @@
 	margin-right: 40px;
 }
 
+.swiper-button-prev-unique:hover {
+	cursor: pointer;
+}
+
+.swiper-button-next-unique:hover {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1350px) {
 	.quality {
-	padding: 60px 15px 0 15px;
-	margin-bottom: 60px;
+		width: 100%;
+		padding: 60px 15px 0 15px;
+		margin-bottom: 60px;
 	}
 
 	.quality__wrapper {
@@ -122,10 +136,19 @@
 
 	.quality__right-bar {
 		width: 100%;
-		padding: 0 10px;
+		padding: 0 10px 10px 10px;
 	}
 
 	.quality__swiper {
 		width: unset;
+	}
+
+	.quality__slide {
+		gap: unset;
+		justify-content: space-between;
+	}
+
+	.quality__swiper-buttons {
+		display: none;
 	}
 }

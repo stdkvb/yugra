@@ -1,11 +1,15 @@
 <div class="page-title" style="background-image: url('@images/@@background');">
 	<div class="page-title__wrapper">
 		<div class="page-title__directory">
-			<a href="#">@@main /</a>
+			@@if (context.main) {
+				<a href="#">@@main /</a>
+			}
 			@@if (context.previous) {
 				<a href="#">@@previous /</a>
 			}
-			<a>@@current</a>
+			@@if (context.current) {
+				<a>@@current</a>
+			}
 		</div>
 		<h1>@@title</h1>
 	</div>

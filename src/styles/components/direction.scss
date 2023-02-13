@@ -104,6 +104,10 @@
 	background-color: #FFF6D6;
 }
 
+.direction__image {
+	margin-top: 10px;
+}
+
 .direction__right-bar {
 	width: 330px;
 }
@@ -170,6 +174,5 @@
 @media screen and (min-width: 991px) {
 	.direction__image {
 		width: 100%;
-		margin-top: 40px;
 	}
 }

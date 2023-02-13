@@ -39,11 +39,6 @@
 	color: #16274a;
 }
 
-.form label:last-of-type {
-	font-size: 14px;
-	margin-bottom: 20px;
-}
-
 .form input {
 	padding: 0 16px;
 	height: 60px;
@@ -53,17 +48,19 @@
 	border: solid 1px #888888;
 	outline: none;
 	width: 100%;
+	max-width: 777px;
 }
 
 .form textarea {
 	padding: 16px 16px;
-	height: 160px;
+	min-height: 160px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
 	border: solid 1px #888888;
 	outline: none;
-	width: 100%;
+	min-width: 100%;
+	max-width: 777px;
 }
 
 .form span {
@@ -132,6 +129,7 @@ form a:hover {
 }
 
 .form select {
+	width: 100%;
   border: solid 1px #888888;
 	height: 60px;
 	font-weight: 400;
@@ -142,6 +140,7 @@ form a:hover {
   padding: 0 16px;
   background-color: #FFFFFF;
   color: #8a97a0;
+	cursor: pointer;
 }
 
 .form select:last-of-type {
@@ -152,6 +151,10 @@ form a:hover {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
+	color: #16274A;
+	font-size: 18px;
+	line-height: 150%;
+	cursor: pointer;
 }
 
 .form button {
@@ -279,20 +282,23 @@ form a:hover {
 
 
 .input-file-container{
-  max-width: 400px;
+  max-width: 786px;
   width: 100%;
   margin: 0;
   position: relative;
 
-  input[type="file"]{
+  input[type="file"] {
     display: block;
-    width: 100%;
-    padding: 0.75rem;
+    width: 160px;
     opacity: 0;
     position: relative !important;
     z-index: 2;
-    cursor: pointer;
+		padding: 0;
   }
+
+	input[type="file"]:hover {
+		cursor: pointer;
+	}
 
   .file-button {
 		font-size: 14px;
@@ -308,6 +314,7 @@ form a:hover {
 
 	.file-button:hover {
 		opacity: 0.7;
+		cursor: pointer;
 	}
 
 	img {
@@ -330,5 +337,92 @@ form a:hover {
     top: 48%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+  }
+}
+
+.dropdown {
+  width: 100%;
+	height: 60px;
+  position: relative;
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 150%;
+    color: #888888;
+    width: 100%;
+		height: 60px;
+    text-align: left;
+    border: solid 1px #888888;
+    padding: 0 16px;
+    cursor: pointer;
+		&:hover {
+			color: #6382c2;
+			border: solid 1px #16274a;
+		}
+		&::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 15px;
+      background: url(@icons/dropdown.svg) 100% 100%;
+			background-repeat: no-repeat;
+      pointer-events: none;
+      transition: 200ms ease;
+    }
+    &_active{
+      &::after{
+        transform: translateY(-50%) rotate(-180deg);
+      }
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    box-shadow: 0px 10px 20px 0px #88919d4d;
+		border-left: solid 1px #888888;
+		border-right: solid 1px #888888;
+    background: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease;
+    &_visible{
+      opacity: 1;
+      visibility: visible;
+    }
+    &-item {
+      margin: 0;
+      padding: 0;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 150%;
+      color: #16274A;
+			border-bottom: solid 1px #888888;
+      transition: 200ms ease;
+      &_active {
+        background: #f5f8fa;
+      }
+      &:hover {
+        background: #6382C2;
+				color: #FFFFFF;
+      }
+    }
+  }
+  &__input{
+    &_hidden{
+      display: none;
+    }
   }
 }

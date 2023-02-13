@@ -1,3 +1,7 @@
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.32 28.12L23.3613 21.614C24.3108 20.5914 25.9292 20.5914 26.8787 21.614L32.92 28.12M1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25Z" stroke="#6382C2" stroke-width="1.5" stroke-linecap="round"/>
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <path transform="rotate(180, 25, 25)" id="svg_1" stroke-linecap="round" stroke-width="1.5" stroke="#6382C2" d="m17.32,28.12l6.0413,-6.506c0.9495,-1.0226 2.5679,-1.0226 3.5174,0l6.0413,6.506m-31.92,-3.12c0,-13.2548 10.7452,-24 24,-24c13.2548,0 24,10.7452 24,24c0,13.2548 -10.7452,24 -24,24c-13.2548,0 -24,-10.7452 -24,-24z"/>
+ </g>
 </svg>
