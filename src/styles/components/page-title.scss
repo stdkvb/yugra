@@ -75,8 +75,16 @@
 		background-position: center;
 	}
 }
+
 @media screen and (max-width: 500px) {
 	.page-title {
 		background-position: -418px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.page-title {
+		max-width: unset;
+		background-size: 100%;
 	}
 }

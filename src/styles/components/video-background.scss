@@ -6,6 +6,10 @@
 	top: 0;
 	z-index: -1;
 	overflow: hidden;
+	left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .video-background::after {
@@ -21,5 +25,15 @@
 @media screen and (max-width: 800px) {
 	.video-background {
 		max-height: 763px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.video-background {
+		max-width: unset;
+	}
+
+	.video-background__wrapper {
+		width: 100%;
 	}
 }
