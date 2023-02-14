@@ -7,6 +7,7 @@ import {
 	takeControlModal,
 	takeControlCookie,
 	takeControlPagination,
+	takeControlTabs,
 } from "./controllers";
 
 takeControlBurger();
@@ -16,6 +17,7 @@ takeControlForm();
 takeControlModal();
 takeControlCookie();
 takeControlPagination();
+takeControlTabs();
 
 const newsSwiper = new Swiper(".news__swiper", {
 	slidesPerView: "auto",
@@ -23,15 +25,6 @@ const newsSwiper = new Swiper(".news__swiper", {
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
-	},
-});
-
-const tabsSwiper = new Swiper(".news-tabs", {
-	slidesPerView: "auto",
-	spaceBetween: 24,
-	navigation: {
-		prevEl: ".swiper-button-prev",
-		nextEl: ".swiper-button-next",
 	},
 });
 
@@ -79,6 +72,22 @@ const navSwiper = new Swiper(".nav-bar__wrapper", {
 	breakpoints: {
 		991: {
 			spaceBetween: 100,
+		},
+	},
+});
+
+const newsTabsSwiper = new Swiper(".news-tabs__swiper", {
+	slidesPerView: "auto",
+	spaceBetween: 24,
+	navigation: {
+		prevEl: ".swiper-button-prev",
+		nextEl: ".swiper-button-next",
+	},
+	mousewheel: false,
+	keyboard: true,
+	breakpoints: {
+		991: {
+			spaceBetween: 60,
 		},
 	},
 });

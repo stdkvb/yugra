@@ -6,6 +6,7 @@ import takeControlForm from "./form";
 import takeControlModal from "./modal";
 import takeControlCookie from "./cookie";
 import takeControlPagination from "./pagination";
+import takeControlTabs from "./tabs";
 
 export {
 	takeControlBurger,
@@ -16,4 +17,5 @@ export {
 	takeControlModal,
 	takeControlCookie,
 	takeControlPagination,
+	takeControlTabs,
 };

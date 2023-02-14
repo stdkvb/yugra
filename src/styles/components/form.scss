@@ -48,7 +48,6 @@
 	border: solid 1px #888888;
 	outline: none;
 	width: 100%;
-	max-width: 777px;
 }
 
 .form textarea {
@@ -79,7 +78,8 @@ form a:hover {
 
 .styled-checkbox {
   position: absolute; // take it out of document flow
-  opacity: 0; // hide it
+  opacity: 0;
+	max-width: 190px;
 
   & + label {
     position: relative;
@@ -121,40 +121,11 @@ form a:hover {
   &:checked + label:after {
     content: url(@icons/checkbox.svg);
     position: absolute;
-		left: 4px;
-		top: 3px;
-    width: 2px;
-    height: 2px;
+	  left: 4px;
+	  top: 0;
+    width: 14px;
+    height: 14px;
   }
-}
-
-.form select {
-	width: 100%;
-  border: solid 1px #888888;
-	height: 60px;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 150%;
-  margin-bottom: 20px;
-  outline: 0;
-  padding: 0 16px;
-  background-color: #FFFFFF;
-  color: #8a97a0;
-	cursor: pointer;
-}
-
-.form select:last-of-type {
-	margin: 0;
-}
-
-.form option {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 150%;
-	color: #16274A;
-	font-size: 18px;
-	line-height: 150%;
-	cursor: pointer;
 }
 
 .form button {
@@ -180,11 +151,6 @@ form a:hover {
 }
 
 .form input:hover {
-	color: #6382C2;
-	border: solid 1px #16274A;
-}
-
-.form select:hover {
 	color: #6382C2;
 	border: solid 1px #16274A;
 }
@@ -246,10 +212,6 @@ form a:hover {
 		font-size: 14px;
 	}
 
-	.form select {
-		font-size: 14px;
-	}
-
 	.form select:last-of-type {
 		margin-bottom: 20px;
 	}
@@ -259,6 +221,23 @@ form a:hover {
 	}
 
 	.form a {
+		font-size: 14px;
+	}
+
+	.form textarea {
+		font-size: 14px;
+	}
+
+	.dropdown__button {
+		height: 53px;
+		font-size: 14px;
+	}
+
+	.dropdown__list {
+		top: 53px;
+	}
+
+	.dropdown__list-item {
 		font-size: 14px;
 	}
 
@@ -342,7 +321,6 @@ form a:hover {
 
 .dropdown {
   width: 100%;
-	height: 60px;
   position: relative;
   &__button {
     position: relative;
@@ -367,7 +345,7 @@ form a:hover {
       top: 50%;
       right: 15px;
       transform: translateY(-50%);
-      width: 16px;
+      width: 20px;
       height: 15px;
       background: url(@icons/dropdown.svg) 100% 100%;
 			background-repeat: no-repeat;

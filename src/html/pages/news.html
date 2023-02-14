@@ -11,14 +11,23 @@
 			</section>
 			<section class="news-tabs">
 				<div class="news-tabs__wrapper">
-					<div class="swiper">
-						<input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-						<label for="tab-btn-1">Новости компании</label>
-						<input type="radio" name="tab-btn" id="tab-btn-2" value="">
-						<label for="tab-btn-2">Общественные обсуждения</label>
-						<input type="radio" name="tab-btn" id="tab-btn-3" value="">
-						<label for="tab-btn-3">Общеотраслевые новости</label>
-						<article class="news-tabs__content" id="content-1">
+					<div class="news-tabs__swiper swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="tab active" data-tab-content="tab1-content">Новости компании</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tab" data-tab-content="tab2-content">Общественные обсуждения</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="tab" data-tab-content="tab3-content">Общеотраслевые новости</div>
+							</div>
+						</div>
+						<div class="news-tabs__swiper-button swiper-button-prev"><img src="@icons/nav-bar-button-prev.svg"></img></div>
+						<div class="news-tabs__swiper-button swiper-button-next"><img src="@icons/nav-bar-button-next.svg"></img></div>
+					</div>
+					<div class="tab-content">
+						<div class="tab-content-item active" id="tab1-content">
 							<ul class="news-tabs__page" id="paginated-list">
 								<li href="#" class="news-tabs__item">
 									<span>08 февраля 2022</span>
@@ -56,49 +65,26 @@
 								<div class="pagination-numbers" id="pagination-numbers"></div>
 								<button class="pagination-button" id="next-button" aria-label="Next page" title="Next page"><img src="@icons/pagination-next.svg"></button>
 							</nav>
-						</article>
-						<article class="news-tabs__content" id="content-2">
-							<ul class="news-tabs__page" id="paginated-list">
+						</div>
+						<div class="tab-content-item" id="tab2-content">
+							<ul class="news-tabs__page">
 								<li href="#" class="news-tabs__item">
-									<span>08 февраля 2022</span>
-									<h3>Общественные обсуждения по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</h3>
-									<p>Уведомление о начале проведения общественных обсуждений по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</p>
-								</li>
-								<li href="#" class="news-tabs__item">
-									<span>08 февраля 2022</span>
-									<h3>Общественные обсуждения по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</h3>
-									<p>Уведомление о начале проведения общественных обсуждений по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</p>
-								</li>
-								<li href="#" class="news-tabs__item">
-									<span>08 февраля 2022</span>
-									<h3>Общественные обсуждения по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</h3>
-									<p>Уведомление о начале проведения общественных обсуждений по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</p>
-								</li>
-								<li href="#" class="news-tabs__item">
-									<span>08 февраля 2022</span>
-									<h3>Общественные обсуждения по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</h3>
-									<p>Уведомление о начале проведения общественных обсуждений по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</p>
-								</li>
-								<li href="#" class="news-tabs__item">
-									<span>08 февраля 2022</span>
-									<h3>Общественные обсуждения по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</h3>
-									<p>Уведомление о начале проведения общественных обсуждений по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</p>
-								</li>
-								<li href="#" class="news-tabs__item">
-									<span>08 февраля 2022</span>
+									<span>09 февраля 2022</span>
 									<h3>Общественные обсуждения по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</h3>
 									<p>Уведомление о начале проведения общественных обсуждений по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</p>
 								</li>
 							</ul>
-							<nav class="pagination-container">
-								<button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page"><img src="@icons/pagination-prev.svg"></button>
-								<div class="pagination-numbers" id="pagination-numbers"></div>
-								<button class="pagination-button" id="next-button" aria-label="Next page" title="Next page"><img src="@icons/pagination-next.svg"></button>
-							</nav>
-						</article>
-						<article class="news-tabs__content" id="content-3">
-
-						</article>
+						</div>
+						<div class="tab-content-item" id="tab3-content">
+							<ul class="news-tabs__page">
+								<li href="#" class="news-tabs__item">
+									<span>10 февраля 2022</span>
+									<h3>Общественные обсуждения по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</h3>
+									<p>Уведомление о начале проведения общественных обсуждений по объекту государственной экологической экспертизы «Обустройство разведочной скважины №30 Объекта 19/1 (Ш-17-22)» включая оценку воздействия на окружающую среду.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -107,3 +93,4 @@
 		@@include('meta/_includeScripts.html')
 	</body>
 </html>
+
