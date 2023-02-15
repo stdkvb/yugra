@@ -8,6 +8,7 @@ import {
 	takeControlCookie,
 	takeControlPagination,
 	takeControlTabs,
+	takeControlYandexMap,
 } from "./controllers";
 
 takeControlBurger();
@@ -18,6 +19,7 @@ takeControlModal();
 takeControlCookie();
 takeControlPagination();
 takeControlTabs();
+takeControlYandexMap();
 
 const newsSwiper = new Swiper(".news__swiper", {
 	slidesPerView: "auto",
@@ -159,3 +161,4 @@ takeControlAccordion(".direction", ".accordion__list", {
 	accordionItemContentSelector: ".accordion__content",
 	accordionItemActiveClass: "accordion__item_active",
 });
+

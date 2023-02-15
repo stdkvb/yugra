@@ -256,6 +256,14 @@ form a:hover {
 		.file-name {
 			position: unset;
 		}
+
+		.file-icon {
+			margin-left: 0;
+		}
+
+		.loaded-file {
+			margin: 0 0 23px 0;
+		}
 	}
 }
 
@@ -310,13 +318,21 @@ form a:hover {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 200px;
-    position: absolute;
-    left: 160px;
-    top: 48%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
   }
+
+	.delete-button:hover {
+		cursor: pointer;
+	}
+
+	.file-icon {
+		position:unset;
+		margin: 0 10px 0 22px;
+	}
+
+	.delete-button {
+		position:unset;
+		margin-left: 10px;
+	}
 }
 
 .dropdown {

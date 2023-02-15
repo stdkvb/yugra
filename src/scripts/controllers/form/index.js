@@ -106,12 +106,32 @@ const takeControlForm = () => {
 	if (fileInput !== null) {
 		fileInput.children[0].insertAdjacentHTML(
 			"afterend",
-			'<img src="./files/icons/clip.svg"><div class="file-button">Прикрепить файл</div><span class="file-name"></span>'
+			'<img src="./files/icons/clip.svg"><div class="file-button">Прикрепить файл</div><div class="loaded-file"><span class="file-name"></span></div>'
 		);
 		fileInput.children[0].addEventListener("change", function () {
+			if (document.querySelector(".loaded-file").contains(document.querySelector(".file-icon"))) {
+				document.querySelector(".loaded-file").removeChild(document.querySelector(".delete-button"));
+				document.querySelector(".loaded-file").removeChild(document.querySelector(".file-icon"));
+			}
 			const splitFileName = this.value.split(/\\/);
-			fileInput.children[3].innerText = splitFileName[splitFileName.length - 1];
+			document.querySelector(".file-name").innerText = splitFileName[splitFileName.length - 1];
+			document.querySelector(".file-name").insertAdjacentHTML(
+				"beforebegin",
+				'<img class="file-icon" src="./files/icons/file.svg">'
+			);
+			document.querySelector(".file-name").insertAdjacentHTML(
+				"afterend",
+				'<img class="delete-button" src="./files/icons/delete-file.svg">'
+			);
+
+			const deleteButton = document.querySelector(".delete-button");
+			deleteButton.addEventListener("click", () => {
+				document.querySelector(".file-name").textContent = "";
+				document.querySelector(".loaded-file").removeChild(document.querySelector(".delete-button"));
+				document.querySelector(".loaded-file").removeChild(document.querySelector(".file-icon"));
+			});
 		});
+
 	}
 };
 

@@ -1,6 +1,6 @@
 const takeControlModal = () => {
 	const successModal = document.getElementById("success-modal");
-	const modalContainer = document.querySelector("modal-container");
+	const modalContainer = document.querySelector(".modal-container");
 	const form = document.getElementById("form");
 	const closeModalButton = document.querySelector(".modal-close");
 	if (form !== null) {
@@ -15,8 +15,14 @@ const takeControlModal = () => {
 			document.body.style.overflow = 'unset';
 		});
 		successModal.addEventListener("click", () => {
-			successModal.classList.remove("modal_active");
-			document.body.style.overflow = 'unset';
+				successModal.classList.remove("modal_active");
+				document.body.style.overflow = 'unset';
+		});
+		modalContainer.addEventListener("click", (e) => {
+			e.preventDefault();
+			e.stopPropagation();
+			e.stopImmediatePropagation();
+			return false;
 		});
 	};
 };

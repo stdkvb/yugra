@@ -1,7 +1,6 @@
 .directions {
 	width: 100%;
 	min-height: 720px;
-	max-width: 1920px;
 	padding-top: 200px;
 	padding-bottom: 120px;
 	height: fit-content;
@@ -33,17 +32,18 @@
 	justify-content: space-between;
 	margin: 25px 0 25px 0;
 	align-items: center;
-	transition: all 0.2s ease;
 }
 
 .directions__background-image {
 	position: absolute;
-	left: -21%;
-	top: -200px;
 	z-index: -2;
-	max-width: 1920px;
+	top: 0;
 	display: none;
 	animation: shows 0.5s;
+	left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes shows {
@@ -212,5 +212,11 @@
 @media screen and (max-width: 460px) {
 	.directions__direction-title {
 		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.directions__background-image {
+		width: 100%;
 	}
 }

@@ -7,6 +7,7 @@ import takeControlModal from "./modal";
 import takeControlCookie from "./cookie";
 import takeControlPagination from "./pagination";
 import takeControlTabs from "./tabs";
+import takeControlYandexMap from "./yandex-map";
 
 export {
 	takeControlBurger,
@@ -18,4 +19,5 @@ export {
 	takeControlCookie,
 	takeControlPagination,
 	takeControlTabs,
+	takeControlYandexMap,
 };
