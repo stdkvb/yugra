@@ -109,20 +109,23 @@ const takeControlForm = () => {
 			'<img src="./files/icons/clip.svg"><div class="file-button">Прикрепить файл</div><div class="loaded-file"><span class="file-name"></span></div>'
 		);
 		fileInput.children[0].addEventListener("change", function () {
-			if (document.querySelector(".loaded-file").contains(document.querySelector(".file-icon"))) {
+			if (fileInput.children[0].files[0].size > 5242880) {
+				alert("Максимальный размер файла 5 Мб!");
+			} else if (document.querySelector(".loaded-file").contains(document.querySelector(".file-icon"))) {
 				document.querySelector(".loaded-file").removeChild(document.querySelector(".delete-button"));
 				document.querySelector(".loaded-file").removeChild(document.querySelector(".file-icon"));
-			}
-			const splitFileName = this.value.split(/\\/);
-			document.querySelector(".file-name").innerText = splitFileName[splitFileName.length - 1];
-			document.querySelector(".file-name").insertAdjacentHTML(
-				"beforebegin",
-				'<img class="file-icon" src="./files/icons/file.svg">'
-			);
-			document.querySelector(".file-name").insertAdjacentHTML(
-				"afterend",
-				'<img class="delete-button" src="./files/icons/delete-file.svg">'
-			);
+			} else {
+				const splitFileName = this.value.split(/\\/);
+				document.querySelector(".file-name").innerText = splitFileName[splitFileName.length - 1];
+				document.querySelector(".file-name").insertAdjacentHTML(
+					"beforebegin",
+					'<img class="file-icon" src="./files/icons/file.svg">'
+				);
+				document.querySelector(".file-name").insertAdjacentHTML(
+					"afterend",
+					'<img class="delete-button" src="./files/icons/delete-file.svg">'
+				);
+			};
 
 			const deleteButton = document.querySelector(".delete-button");
 			deleteButton.addEventListener("click", () => {
@@ -131,8 +134,7 @@ const takeControlForm = () => {
 				document.querySelector(".loaded-file").removeChild(document.querySelector(".file-icon"));
 			});
 		});
-
-	}
+	};
 };
 
 export default takeControlForm;
