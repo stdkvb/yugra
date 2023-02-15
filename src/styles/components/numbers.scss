@@ -10,27 +10,15 @@
 	width: 1350px;
 	height: fit-content;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	position: absolute;
 	bottom: -130px;
-}
-
-.numbers__items-container {
-	min-width: 540px;
-	width: 50%;
-	height: 267px;
-	display: flex;
 	background-color: #16274A;
-	z-index: 3;
-}
-
-.numbers__items-container:first-of-type {
-	clip-path: polygon(10% 0, 80% 0%, 100% 0, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0 24%);
+	clip-path: polygon(5% 0px, 80% 0px, 100% 0px, 100% 80%, 100% 100%, 0px 100%, 0px 80%, 0px 24%);
 }
 
 .numbers__item {
-	width: 50%;
+	width: 337px;
 	height: 267px;
 	display: flex;
 	flex-direction: column;
@@ -72,16 +60,26 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1350px) {
+	.numbers {
+		padding: 0 15px;
+	}
+
 	.numbers__container {
-		width: 100%;
-		padding: 0 15px 0 15px;
+		width: 98%;
 	}
 }
 
 @media screen and (max-width: 1110px) {
 	.numbers__container {
-		bottom: 40px;
+		bottom: 30px;
+		width: 555px;
+		flex-wrap: wrap;
+		clip-path: polygon(8% 0px, 80% 0px, 100% 0px, 100% 80%, 100% 100%, 0px 100%, 0px 80%, 2px 12%);
+	}
+
+	.numbers__item {
+		width: 277px;
 	}
 }
 
@@ -107,12 +105,12 @@
 @media screen and (max-width: 800px) {
 	.numbers__container {
 		bottom: 70px;
+		width: 330px;
 	}
 
-  .numbers__items-container {
+  .numbers__item {
+		width: 165px;
 		height: 172px;
-		min-width: 330px;
-		width: 51%;
 	}
 
 	.numbers__item-title {
