@@ -161,4 +161,3 @@ takeControlAccordion(".direction", ".accordion__list", {
 	accordionItemContentSelector: ".accordion__content",
 	accordionItemActiveClass: "accordion__item_active",
 });
-

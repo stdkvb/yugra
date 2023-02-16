@@ -87,15 +87,29 @@
 }
 
 .swiper-button-prev-unique {
+	width: 50px;
+	height: 50px;
 	margin-right: 40px;
+	background-image: url(@icons/accordion-arrow-blue.svg);
+	background-position: center;
+}
+
+.swiper-button-next-unique {
+	width: 50px;
+	height: 50px;
+	background-image: url(@icons/accordion-arrow-blue.svg);
+	background-position: center;
+	transform: rotate(180deg);
 }
 
 .swiper-button-prev-unique:hover {
 	cursor: pointer;
+	background-image: url(@icons/accordion-arrow-hover.svg);
 }
 
 .swiper-button-next-unique:hover {
 	cursor: pointer;
+	background-image: url(@icons/accordion-arrow-hover.svg);
 }
 
 @media screen and (max-width: 1350px) {
@@ -141,11 +155,6 @@
 
 	.quality__swiper {
 		width: unset;
-	}
-
-	.quality__slide {
-		gap: unset;
-		justify-content: space-between;
 	}
 
 	.quality__swiper-buttons {

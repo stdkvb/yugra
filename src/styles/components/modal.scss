@@ -64,3 +64,24 @@
 .modal_active {
 	display: flex;
 }
+
+@media screen and (max-width: 600px) {
+	.modal-container {
+		max-width: 330px;
+	}
+
+	.modal-content {
+		gap: 20px;
+			h3 {
+				font-size: 26px;
+			}
+			img {
+				max-width: 100px;
+			}
+	}
+
+	.modal-close {
+		top: -38px;
+		right: 24px;
+	}
+}

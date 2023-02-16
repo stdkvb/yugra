@@ -199,6 +199,7 @@
 	color: #16274a;
 	background-image: url(@icons/resume-button.svg);
 	background-size: 100%;
+	background-repeat: no-repeat;
 	clip-path: polygon(6% 0,100% 0,100% 75%,94% 100%,0 100%,0 25%);
 	transition: all 0.4s ease;
 }

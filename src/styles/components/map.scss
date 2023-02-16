@@ -67,6 +67,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.4s ease-in-out;
+}
+
+.map__button:hover {
+	background-color: #FFF6D6;
 }
 
 .map__map-mark {

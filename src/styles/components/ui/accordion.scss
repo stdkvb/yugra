@@ -48,16 +48,17 @@
 
 .accordion-icon {
 	transition: all 0.4s ease;
-	background-image: url(@icons/accordeon-arrow-blue.svg);
+	background-image: url(@icons/accordion-arrow-blue.svg);
 	background-repeat: no-repeat;
-	width: 51px;
+	width: 50px;
 	height: 50px;
 	background-color: transparent;
 	border: none;
+	background-position: center;
 }
 
 .accordion-icon:hover {
-	background-image: url(@icons/accordeon-arrow-hover.svg);
+	background-image: url(@icons/accordion-arrow-hover.svg);
 	background-repeat: no-repeat;
 }
 

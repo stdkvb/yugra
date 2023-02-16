@@ -42,7 +42,8 @@
 							<p>В случае отсутствия вакансии, которая Вас заинтересовала в данный момент, Вы можете переслать свое резюме, заполнив ФОРМУ. Возможно, в будущем мы сможем Вам предложить достойную позицию в нашей компании.</p>
 							<p>Мы предлагаем: оформление по ТК РФ, соц. пакет, полный рабочий день на территории работодателя.</p>
 						</div>
-						<div class="form" id="send-resume">
+						<div id="send-resume"></div>
+						<div class="form">
 							<h2>Отправить резюме</h2>
 							<form id="form">
 								<div class="form__field">
@@ -70,7 +71,7 @@
 											<li class="dropdown__list-item">3</li>
 											<li class="dropdown__list-item">4</li>
 										</ul>
-										<input class="dropdown__input_hidden" type="text" name="select-category" value=""/>
+										<input class="dropdown__input_hidden" type="text" name="select-category" value="" required/>
 									</div>
 								</div>
 								<div class="form__field">
@@ -83,11 +84,11 @@
 											<li class="dropdown__list-item">3</li>
 											<li class="dropdown__list-item">4</li>
 										</ul>
-										<input class="dropdown__input_hidden" type="text" name="select-category" value=""/>
+										<input class="dropdown__input_hidden" type="text" name="select-category" value="" required/>
 									</div>
 								</div>
 								<div class="input-file-container">
-									<input class="file-input" type="file">
+									<input class="file-input" type="file" required>
 								</div>
 								<div class="form__checkbox">
 									<input class="styled-checkbox" type="checkbox" id="checkbox" required>

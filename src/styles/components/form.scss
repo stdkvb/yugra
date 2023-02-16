@@ -265,6 +265,11 @@ form a:hover {
 			margin: 0 0 23px 0;
 		}
 	}
+
+	.styled-checkbox:checked + label::after {
+		top: 3px;
+	}
+
 }
 
 
@@ -351,7 +356,7 @@ form a:hover {
     border: solid 1px #888888;
     padding: 0 16px;
     cursor: pointer;
-		&:hover {
+		&:hover:not(.dropdown__button_valid) {
 			color: #6382c2;
 			border: solid 1px #16274a;
 		}
@@ -419,4 +424,8 @@ form a:hover {
       display: none;
     }
   }
+}
+
+.dropdown__button_valid {
+	border: solid 1px #00C113;
 }

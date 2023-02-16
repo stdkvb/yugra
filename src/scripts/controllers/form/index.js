@@ -48,6 +48,7 @@ const takeControlForm = () => {
 				dropdownBtn.innerText = this.innerText;
 				dropdownInput.value = this.dataset.value;
 				dropdownList.classList.remove("dropdown__list_visible");
+				dropdownBtn.classList.add("dropdown__button_valid");
 			});
 		});
 
@@ -62,42 +63,6 @@ const takeControlForm = () => {
 			if (e.key === "Tab" || e.key === "Escape") {
 				dropdownBtn.classList.remove("dropdown__button_active");
 				dropdownList.classList.remove("dropdown__list_visible");
-			}
-		});
-	});
-
-	document.querySelectorAll(".dropdown_with-chk").forEach((dropdownWrapper) => {
-		const dropdownBtn = dropdownWrapper.querySelector(".dropdown_with-chk__button");
-		const dropdownList = dropdownWrapper.querySelector(".dropdown_with-chk__list");
-		const dropdownItems = dropdownList.querySelectorAll(".dropdown_with-chk__list-item");
-
-		dropdownBtn.addEventListener("click", function () {
-			dropdownList.classList.toggle("dropdown_with-chk__list_visible");
-			this.classList.toggle("dropdown_with-chk__button_active");
-		});
-
-		dropdownItems.forEach((listItem) => {
-			listItem.addEventListener("click", (e) => {
-				e.target.classList.toggle("dropdown_with-chk__list-item_active");
-			});
-		});
-
-		document.addEventListener("click", (e) => {
-			if (
-				e.target !== dropdownBtn &&
-				e.target !== dropdownItems &&
-				!e.target.classList.contains("dropdown_with-chk__list-item") &&
-				!e.target.classList.contains("dropdown_with-chk__list-item_label")
-			) {
-				dropdownBtn.classList.remove("dropdown_with-chk__button_active");
-				dropdownList.classList.remove("dropdown_with-chk__list_visible");
-			}
-		});
-
-		document.addEventListener("keydown", (e) => {
-			if (e.key === "Tab" || e.key === "Escape") {
-				dropdownBtn.classList.remove("dropdown_with-chk__button_active");
-				dropdownList.classList.remove("dropdown_with-chk__list_visible");
 			}
 		});
 	});
