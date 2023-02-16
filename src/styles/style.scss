@@ -1,37 +1,37 @@
 @import 'base/basic.scss';
 @import 'fonts.scss';
 
-@import 'pages/road-map.scss';
-
 @import 'components/ui/accordion.scss';
-
 @import 'components/header.scss';
 @import 'components/video-background.scss';
 @import 'components/head-title.scss';
 @import 'components/numbers.scss';
-@import 'components/directions.scss';
+@import 'components/directions-on-main.scss';
 @import 'components/geography.scss';
 @import 'components/map.scss';
-@import 'components/news.scss';
 @import 'components/news-slider.scss';
 @import 'components/news-tabs.scss';
-@import 'components/news-internal.scss';
 @import 'components/page-title.scss';
 @import 'components/nav-bar.scss';
-@import 'components/about-company.scss';
 @import 'components/presentation.scss';
-@import 'components/project.scss';
 @import 'components/main-directions.scss';
 @import 'components/other-directions.scss';
-@import 'components/direction.scss';
-@import 'components/career.scss';
 @import 'components/form.scss';
-@import 'components/documents.scss';
-@import 'components/quality.scss';
-@import 'components/partner.scss';
-@import 'components/contacts.scss';
-@import 'components/error-page.scss';
-@import 'components/privacy-policy.scss';
 @import 'components/footer.scss';
 @import 'components/modal.scss';
 @import 'components/cookie.scss';
+
+@import 'pages/road-map.scss';
+@import 'pages/about-project.scss';
+@import 'pages/quality.scss';
+@import 'pages/about-company.scss';
+@import 'pages/career.scss';
+@import 'pages/contacts.scss';
+@import 'pages/direction.scss';
+@import 'pages/documents.scss';
+@import 'pages/error-page.scss';
+@import 'pages/news-internal.scss';
+@import 'pages/news.scss';
+@import 'pages/partner.scss';
+@import 'pages/privacy-policy.scss';
+

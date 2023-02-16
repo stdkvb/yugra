@@ -79,7 +79,7 @@
 	height: 50px;
 	border: none;
 	background-color: transparent;
-	background-image: url('../../../files/icons/accordeon-arrow-white.svg');
+	background-image: url('../../../files/icons/accordion-arrow-white.svg');
 	transition: all 0.4s ease;
 	position: relative;
 	transform: rotate(180deg);
@@ -87,7 +87,7 @@
 }
 
 .directions__direction-button:hover:not(.directions__direction-button_active) {
-	background-image: url('../../../files/icons/accordeon-arrow-hover-down.svg');
+	background-image: url('../../../files/icons/accordion-arrow-hover.svg');
 }
 
 .directions__direction-button:hover:not(.directions__direction-button_active) {
