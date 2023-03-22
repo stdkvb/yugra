@@ -6,7 +6,7 @@ const takeControlMap = () => {
 			cardActive.forEach((elem) => {
 				elem.classList.remove("map__map-card_active");
 			});
-			const card = this.previousElementSibling;
+			const card = this.firstElementChild;
 			card.classList.toggle("map__map-card_active");
 			if (window.innerWidth < 1350) {
 				document.body.style.overflow = 'hidden';
