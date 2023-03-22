@@ -110,7 +110,7 @@
 .header__burger-button {
 	width: 42px;
 	height: 42px;
-	background-image: url('../../../files/icons/burger-blue.svg');
+	background-image: url(@icons/burger-blue.svg);
 	background-color: transparent;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -121,7 +121,7 @@
 }
 
 .header__burger-button_white {
-	background-image: url('../../../files/icons/burger-white.svg');
+	background-image: url(@icons/burger-white.svg);
 	width: 42px;
 	height: 42px;
 	background-color: transparent;
@@ -212,11 +212,11 @@
 	}
 
 	.header__burger-button_active {
-		background-image: url('../../../files/icons/close-blue.svg');
+		background-image: url(@icons/close-blue.svg);
 	}
 
 	.header__burger-button_white_active {
-		background-image: url('../../../files/icons/close-white.svg');
+		background-image: url(@icons/close-white.svg);
 	}
 
 	.header__nav-link {

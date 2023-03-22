@@ -24,7 +24,7 @@
 		opacity: unset;
 	}
 	&:before {
-		content: url("@icons/close-modal.svg");
+		content: url(@icons/close-modal.svg);
 		position: absolute;
 		left: 50%;
 		top: 50%;

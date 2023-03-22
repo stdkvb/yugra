@@ -79,7 +79,7 @@
 	height: 50px;
 	border: none;
 	background-color: transparent;
-	background-image: url('../../../files/icons/accordion-arrow-white.svg');
+	background-image: url(@icons/accordion-arrow-white.svg);
 	transition: all 0.4s ease;
 	position: relative;
 	transform: rotate(180deg);
@@ -87,7 +87,7 @@
 }
 
 .directions__direction-button:hover:not(.directions__direction-button_active) {
-	background-image: url('../../../files/icons/accordion-arrow-hover.svg');
+	background-image: url(@icons/accordion-arrow-hover.svg);
 }
 
 .directions__direction-button:hover:not(.directions__direction-button_active) {
@@ -133,7 +133,7 @@
 .directions__about-button {
 	width: 158px;
 	height: 54px;
-	background-image: url('../../../files/icons/directions-button.svg');
+	background-image: url(@icons/directions-button.svg);
 	background-repeat: no-repeat;
 	color: #FFD130;
 	font-weight: 500;
@@ -179,7 +179,7 @@
 	}
 
 	.directions__direction_active {
-		background-image: url('../../../files/icons/direction-underline.svg');
+		background-image: url(@icons/direction-underline.svg);
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-size: contain;
