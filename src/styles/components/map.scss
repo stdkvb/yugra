@@ -49,9 +49,16 @@
 	margin-bottom: 4px;
 }
 
-.map__map-card span:nth-child(2n) {
+.map__map-card span:nth-child(1) {
 	font-weight: 700;
+}
+
+.map__map-card span:nth-child(2) {
 	margin-bottom: 16px;
+}
+
+.map__map-card span:nth-child(3) {
+	font-weight: 700;
 }
 
 .map__button {

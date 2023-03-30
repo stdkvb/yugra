@@ -46,7 +46,7 @@ const takeControlForm = () => {
 				});
 				e.target.classList.add("dropdown__list-item_active");
 				dropdownBtn.innerText = this.innerText;
-				dropdownInput.value = this.dataset.value;
+				dropdownInput.value = this.id.value;
 				dropdownList.classList.remove("dropdown__list_visible");
 				dropdownBtn.classList.add("dropdown__button_valid");
 			});
