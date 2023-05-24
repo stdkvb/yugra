@@ -132,6 +132,7 @@ const qualitySwiper = new Swiper(".quality__swiper", {
 	spaceBetween: 30,
 	breakpoints: {
 		991: {
+			slidesPerView: "2",
 			direction: "vertical",
 			navigation: {
 				prevEl: ".swiper-button-prev-unique",
