@@ -6,10 +6,10 @@ const takeControlMap = () => {
 			cardActive.forEach((elem) => {
 				elem.classList.remove("map__map-card_active");
 			});
-			const card = this.firstElementChild;
+			const card = this.nextElementSibling;
 			card.classList.toggle("map__map-card_active");
 			if (window.innerWidth < 1350) {
-				document.body.style.overflow = 'hidden';
+				// document.body.style.overflow = "hidden";
 			}
 		});
 		const map = document.querySelector(".map__map-image");
@@ -18,7 +18,7 @@ const takeControlMap = () => {
 			cardActive.forEach((elem) => {
 				elem.classList.remove("map__map-card_active");
 			});
-			document.body.style.overflow = 'unset';
+			// document.body.style.overflow = "unset";
 		};
 	});
 };

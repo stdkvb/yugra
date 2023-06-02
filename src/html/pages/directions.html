@@ -1,93 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 	@@include('meta/_head.html', {title: 'Направления'})
 	<body>
 		@@include('components/header/_index.html', {logo: 'logo-blue.png'})
 		<main class="directions-page">
-      <section class="directions">
-				<img class="directions__background-image  directions__background-image_active" id="direction-background-1" src="@images/direction-background-1.png">
-				<img class="directions__background-image" id="direction-background-2" src="@images/direction-background-2.png">
-				<img class="directions__background-image" id="direction-background-3" src="@images/direction-background-3.png">
-				<img class="directions__background-image" id="direction-background-4" src="@images/direction-background-4.png">
-					<div class="directions__container">
-						<h1>Основные направления</h1>
-						<div class="directions__direction directions__direction_active">
-							<div class="directions__header" id="direction-1">
-								<span class="directions__direction-title  directions__direction-title_active">Изыскания</span>
-								<button class="directions__direction-button directions__direction-button_active"></button>
-							</div>
-							<div class="directions__about directions__about_active">
-								<span class="directions__about-title">Изыскания</span>
-								<div class="directions__about-text">
-									ООО «Югранефтегазпроект» Предоставляет комплексные услуги по выполнению инженерных изысканий, включающих в себя:<br />
-									- Инженерно-геодезические изыскания;<br />
-									- Инженерно-геологические изыскания;<br />
-									- Инженерно-гидрометеорологические изыскания;<br />
-									- Инженерно-экологические изыскания.
-								</div>
-								<a class="directions__about-button" href="#">Подробнее</a>
-							</div>
+			<section class="directions">
+				<img
+					class="directions__background-image directions__background-image_active"
+					id="direction-background-1"
+					src="@images/direction-background-1.png"
+				/>
+				<img
+					class="directions__background-image"
+					id="direction-background-2"
+					src="@images/direction-background-2.png"
+				/>
+				<img
+					class="directions__background-image"
+					id="direction-background-3"
+					src="@images/direction-background-3.png"
+				/>
+				<img
+					class="directions__background-image"
+					id="direction-background-4"
+					src="@images/direction-background-4.png"
+				/>
+				<img
+					class="directions__background-image"
+					id="direction-background-5"
+					src="@images/direction-background-1.png"
+				/>
+				<img
+					class="directions__background-image"
+					id="direction-background-6"
+					src="@images/direction-background-2.png"
+				/>
+				<img
+					class="directions__background-image"
+					id="direction-background-7"
+					src="@images/direction-background-3.png"
+				/>
+				<img
+					class="directions__background-image"
+					id="direction-background-8"
+					src="@images/direction-background-4.png"
+				/>
+				<div class="directions__container">
+					<h1>Основные направления</h1>
+					<div class="directions__direction directions__direction_active">
+						<div class="directions__header" id="direction-1">
+							<span class="directions__direction-title directions__direction-title_active">Изыскания</span>
+							<button class="directions__direction-button directions__direction-button_active"></button>
 						</div>
-						<div class="directions__direction">
-							<div class="directions__header" id="direction-2">
-								<span class="directions__direction-title">Землеустройство</span>
-								<button class="directions__direction-button"></button>
+						<div class="directions__about directions__about_active">
+							<span class="directions__about-title">Изыскания</span>
+							<div class="directions__about-text">
+								ООО «Югранефтегазпроект» Предоставляет комплексные услуги по выполнению инженерных изысканий, включающих
+								в себя:<br />
+								- Инженерно-геодезические изыскания;<br />
+								- Инженерно-геологические изыскания;<br />
+								- Инженерно-гидрометеорологические изыскания;<br />
+								- Инженерно-экологические изыскания.
 							</div>
-							<div class="directions__about">
-								<span class="directions__about-title">Землеустройство</span>
-								<div class="directions__about-text">
-									- Подготовка и утверждение схем расположения земельных участков;<br />
-									- Подготовка и утверждение проекта планировки и межевания территории;<br />
-									- Подготовка ГПЗУ;<br />
-									- Подготовка материала к отводу земель;<br />
-									- Подготовка сведений по землепользователям для инженерных изысканий.
-								</div>
-								<a class="directions__about-button" href="#">Подробнее</a>
-							</div>
-						</div>
-						<div class="directions__direction">
-							<div class="directions__header" id="direction-3">
-								<span class="directions__direction-title">Проектирование</span>
-								<button class="directions__direction-button"></button>
-							</div>
-							<div class="directions__about">
-								<span class="directions__about-title">Проектирование</span>
-								<div class="directions__about-text">
-									- 3D проектирование;<br />
-									- Концептуальное проектирование;<br />
-									- Разработка и обустройство нефтяных и газовых месторождений;<br />
-									- Хранение нефти;<br />
-									- Энергетика и связь;<br />
-									- Объекты общего назначения.
-								</div>
-								<a class="directions__about-button" href="#">Подробнее</a>
-							</div>
-						</div>
-						<div class="directions__direction">
-
-							<div class="directions__header" id="direction-4">
-								<span class="directions__direction-title">Авторский надзор</span>
-								<button class="directions__direction-button"></button>
-							</div>
-							<div class="directions__about">
-								<span class="directions__about-title">Авторский надзор</span>
-								<div class="directions__about-text">
-									- Осуществление проектного сопровождения с привлечением группы авторского надзора на территорию исполнителя;<br />
-									- Проведение оценки соответствия вносимых изменений в проектную документацию;<br />
-									- Оценка возможности замены материалов и оборудования;<br />
-									- Соблюдение технологии строительства;<br />
-									- Достоверность документации;<br />
-									- Достижение проектных значений.
-								</div>
-								<a class="directions__about-button" href="#">Подробнее</a>
-							</div>
+							<a class="directions__about-button" href="#">Подробнее</a>
 						</div>
 					</div>
+					<div class="directions__direction">
+						<div class="directions__header" id="direction-2">
+							<span class="directions__direction-title">Землеустройство</span>
+							<button class="directions__direction-button"></button>
+						</div>
+						<div class="directions__about">
+							<span class="directions__about-title">Землеустройство</span>
+							<div class="directions__about-text">
+								- Подготовка и утверждение схем расположения земельных участков;<br />
+								- Подготовка и утверждение проекта планировки и межевания территории;<br />
+								- Подготовка ГПЗУ;<br />
+								- Подготовка материала к отводу земель;<br />
+								- Подготовка сведений по землепользователям для инженерных изысканий.
+							</div>
+							<a class="directions__about-button" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="directions__direction">
+						<div class="directions__header" id="direction-3">
+							<span class="directions__direction-title">Проектирование</span>
+							<button class="directions__direction-button"></button>
+						</div>
+						<div class="directions__about">
+							<span class="directions__about-title">Проектирование</span>
+							<div class="directions__about-text">
+								- 3D проектирование;<br />
+								- Концептуальное проектирование;<br />
+								- Разработка и обустройство нефтяных и газовых месторождений;<br />
+								- Хранение нефти;<br />
+								- Энергетика и связь;<br />
+								- Объекты общего назначения.
+							</div>
+							<a class="directions__about-button" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="directions__direction">
+						<div class="directions__header" id="direction-4">
+							<span class="directions__direction-title">Авторский надзор</span>
+							<button class="directions__direction-button"></button>
+						</div>
+						<div class="directions__about">
+							<span class="directions__about-title">Авторский надзор</span>
+							<div class="directions__about-text">
+								- Осуществление проектного сопровождения с привлечением группы авторского надзора на территорию
+								исполнителя;<br />
+								- Проведение оценки соответствия вносимых изменений в проектную документацию;<br />
+								- Оценка возможности замены материалов и оборудования;<br />
+								- Соблюдение технологии строительства;<br />
+								- Достоверность документации;<br />
+								- Достижение проектных значений.
+							</div>
+							<a class="directions__about-button" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="directions__direction">
+						<div class="directions__header" id="direction-5">
+							<span class="directions__direction-title">Подготовка материалов</span>
+							<button class="directions__direction-button"></button>
+						</div>
+						<div class="directions__about directions__about_bottom">
+							<span class="directions__about-title">Подготовка материалов</span>
+							<div class="directions__about-text">
+								Обязательная часть градостроительной деятельности, обеспечивающая комплексное изучение природных условий
+								территории (региона, района, площадки, участка, трассы) и факторов техногенного воздействия на
+								территорию объектов капитального строительства для решения следующих задач
+								Обязательная часть градостроительной деятельности, обеспечивающая комплексное изучение природных условий
+								территории (региона, района, площадки, участка, трассы) и факторов техногенного воздействия на
+								территорию объектов капитального строительства для решения следующих задач
+							</div>
+							<a class="directions__about-button" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="directions__direction">
+						<div class="directions__header" id="direction-6">
+							<span class="directions__direction-title">Обследование состояния</span>
+							<button class="directions__direction-button"></button>
+						</div>
+						<div class="directions__about directions__about_bottom">
+							<span class="directions__about-title">Обследование состояния</span>
+							<div class="directions__about-text">
+								Обязательная часть градостроительной деятельности, обеспечивающая комплексное изучение природных условий
+								территории (региона, района, площадки, участка, трассы) и факторов техногенного воздействия на
+								территорию объектов капитального строительства для решения следующих задач
+							</div>
+							<a class="directions__about-button" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="directions__direction">
+						<div class="directions__header" id="direction-7">
+							<span class="directions__direction-title">3D проектирование</span>
+							<button class="directions__direction-button"></button>
+						</div>
+						<div class="directions__about directions__about_bottom">
+							<span class="directions__about-title">3D проектирование</span>
+							<div class="directions__about-text">
+								Обязательная часть градостроительной деятельности, обеспечивающая комплексное изучение природных условий
+								территории (региона, района, площадки, участка, трассы) и факторов техногенного воздействия на
+								территорию объектов капитального строительства для решения следующих задач
+							</div>
+							<a class="directions__about-button" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="directions__direction">
+						<div class="directions__header" id="direction-8">
+							<span class="directions__direction-title">Типизация и унификация</span>
+							<button class="directions__direction-button"></button>
+						</div>
+						<div class="directions__about directions__about_bottom">
+							<span class="directions__about-title">Типизация и унификация</span>
+							<div class="directions__about-text">
+								Обязательная часть градостроительной деятельности, обеспечивающая комплексное изучение природных условий
+								территории (региона, района, площадки, участка, трассы) и факторов техногенного воздействия на
+								территорию объектов капитального строительства для решения следующих задач
+							</div>
+							<a class="directions__about-button" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
 			</section>
-			@@include('components/other-directions/_index.html')
 		</main>
-		@@include('components/footer/_index.html')
-
-		@@include('meta/_includeScripts.html')
+		@@include('components/footer/_index.html') @@include('meta/_includeScripts.html')
 	</body>
 </html>

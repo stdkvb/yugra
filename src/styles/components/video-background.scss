@@ -22,9 +22,15 @@
   background-image: linear-gradient(180deg, rgba(22, 39, 74, 0.9) 16.25%, rgba(22, 39, 74, 0.81) 26.9%, rgba(22, 39, 74, 0.548437) 35.93%, rgba(22, 39, 74, 0.407812) 49.43%, rgba(22, 39, 74, 0.304687) 57.32%, rgba(22, 39, 74, 0.182812) 65.1%, rgba(22, 39, 74, 0) 77.57%);
 }
 
+@media screen and (max-width: 1110px) {
+	.video-background {
+		max-height: 780px;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.video-background {
-		max-height: 763px;
+		max-height: 580px;
 	}
 }
 

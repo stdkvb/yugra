@@ -1,24 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 	@@include('meta/_head.html', {title: 'ООО «Югранефтегазпроект»'})
 	<body>
 		@@include('components/header/_index.html', {class: '_white', logo: 'logo-white.png'})
 		@@include('components/video-background/_index.html')
-		<main style="background: unset;">
-			@@include('components/head-title/_index.html')
-			@@include('components/numbers/_index.html')
+		<main style="background: unset">
+			@@include('components/head-title/_index.html') @@include('components/numbers/_index.html')
 			@@include('components/directions/_index.html')
 			<section class="geography">
 				<h2 class="geography__title">География компании</h2>
 				@@include('components/map/_index.html')
 			</section>
-			<section class="news">
-				@@include('components/news-slider/_index.html')
-			</section>
+			<div class="items-wrap">
+				<div class="items marquee">
+					<div class="item"></div>
+					<div class="item"></div>
+					<div class="item"></div>
+					<div class="item"></div>
+				</div>
+				<div aria-hidden="true" class="items marquee">
+					<div class="item"></div>
+					<div class="item"></div>
+					<div class="item"></div>
+					<div class="item"></div>
+				</div>
+			</div>
+			<section class="news">@@include('components/news-slider/_index.html')</section>
 		</main>
-		@@include('components/footer/_index.html')
-		@@include('components/cookie/_index.html')
-
+		@@include('components/footer/_index.html') @@include('components/cookie/_index.html')
 		@@include('meta/_includeScripts.html')
 	</body>
 </html>
