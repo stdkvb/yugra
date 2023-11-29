@@ -78,7 +78,7 @@
 
 .directions__direction-button {
 	margin: 0;
-	width: 50px;
+	min-width: 50px;
 	height: 50px;
 	border: none;
 	background-color: transparent;
@@ -179,6 +179,7 @@
 	.directions__direction {
 		display: flex;
 		width: 50%;
+		position: relative;
 	}
 
 	.directions__direction_active {
@@ -199,15 +200,10 @@
 
 	.directions__about {
 		position: absolute;
-		right: 0%;
+		right: -100%;
 		top: 0%;
 		margin: 0;
-		width: 50%;
-	}
-
-	.directions__about_bottom {
-		bottom: 0;
-		top: unset;
+		width: 100%;
 	}
 
 	.directions__about-title {
@@ -221,3 +217,23 @@
 		font-size: 26px;
 	}
 }
+
+@media screen and (min-width: 1020px) {
+	.directions__direction {
+		position: relative;
+	}
+
+	.directions__about {
+		right: -100%;
+		width: 100%;
+	}
+
+	.directions__direction:last-child .directions__about {
+		top: -100%;
+	}
+}
+
+.directions__about-text li {
+	list-style-type: "– ";
+}
+

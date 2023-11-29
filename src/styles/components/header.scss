@@ -5,7 +5,7 @@
 }
 
 .header_white a {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 .header__wrapper {
@@ -37,7 +37,7 @@
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
-	color: #16274A;
+	color: #16274a;
 	text-align: center;
 	cursor: pointer;
 	transition: all 0.4s ease-in-out;
@@ -50,7 +50,7 @@
 	width: 0px;
 	height: 3px;
 	margin-top: 13px;
-	background-color: #FFE06E;
+	background-color: #ffe06e;
 	content: "";
 	transition: width 0.3s ease-out;
 }
@@ -72,7 +72,7 @@
 	width: 70%;
 	height: 3px;
 	margin-top: 13px;
-	background-color: #FFE06E;
+	background-color: #ffe06e;
 	content: "";
 }
 
@@ -82,9 +82,9 @@
 	justify-content: center;
 	width: 237px;
 	height: 54px;
-	background-color: #FFD130;
+	background-color: #ffd130;
 	clip-path: polygon(6% 0, 100% 0, 100% 60%, 94% 100%, 0 100%, 0 40%);
-	color: #36260E !important;
+	color: #36260e !important;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
@@ -93,7 +93,7 @@
 }
 
 .header__button:hover {
-	background-color: #FFF6D6;
+	background-color: #fff6d6;
 }
 
 .header__phone {
@@ -103,7 +103,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 150%;
-	color: #16274A;
+	color: #16274a;
 	display: none;
 }
 
@@ -135,13 +135,13 @@
 
 @media screen and (max-width: 1380px) {
 	.header__wrapper {
-	padding: 0 10px 0 15px;
+		padding: 0 10px 0 15px;
 	}
 }
 
 @media screen and (max-width: 1110px) {
 	.header {
-	  flex-direction: column;
+		flex-direction: column;
 		justify-content: flex-start;
 		padding: 20px 0 20px 0;
 		height: auto;
@@ -200,6 +200,8 @@
 		display: block;
 		grid-area: phone;
 		margin-left: -30px;
+
+		font-size: 13px;
 	}
 
 	.header__phone_white {
@@ -230,3 +232,4 @@
 		padding-right: 0;
 	}
 }
+

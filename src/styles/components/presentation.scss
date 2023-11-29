@@ -12,16 +12,20 @@
 	width: 100%;
 	height: 98px;
 	display: flex;
-	background-color: #16274A;
+	background-color: #16274a;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 26px;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 .presentation__header h2 {
 	font-weight: 700;
 	line-height: 120%;
+}
+
+.presentation__header h3 {
+	max-width: 190px;
 }
 
 .presentation__button {
@@ -53,7 +57,7 @@
 	height: 154px;
 	text-align: center;
 	padding: 20px 0;
-	color: #16274A;
+	color: #16274a;
 	font-weight: 700;
 }
 
@@ -80,11 +84,11 @@
 	height: 149px;
 	display: flex;
 	flex-direction: column;
-	background-color: #16274A;
+	background-color: #16274a;
 	justify-content: space-between;
 	align-items: left;
 	padding: 20px 26px;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 .presentation__footer h2 {
@@ -100,7 +104,7 @@
 
 .presentation__footer a {
 	font-size: 18px;
-	color: #FFFFFF;
+	color: #ffffff;
 	transition: all 0.4s ease;
 }
 
@@ -127,3 +131,4 @@
 		font-size: 14px;
 	}
 }
+
