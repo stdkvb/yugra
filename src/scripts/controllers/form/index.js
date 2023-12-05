@@ -71,7 +71,7 @@ const takeControlForm = () => {
 	if (fileInput !== null) {
 		fileInput.children[0].insertAdjacentHTML(
 			"afterend",
-			'<img src="./files/icons/clip.svg"><div class="file-button">Прикрепить файл</div><div class="loaded-file"><span class="file-name"></span></div>'
+			'<img src="/local/templates/yugra/files/icons/clip.svg"><div class="file-button">Прикрепить файл</div><div class="loaded-file"><span class="file-name"></span></div>'
 		);
 		fileInput.children[0].addEventListener("change", function () {
 			if (fileInput.children[0].files[0].size > 5242880) {
