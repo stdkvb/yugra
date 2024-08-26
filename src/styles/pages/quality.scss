@@ -10,7 +10,7 @@
 .quality__wrapper {
 	width: 1350px;
 	padding: 40px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
@@ -18,7 +18,7 @@
 
 .quality__content {
 	width: 840px;
-	color: #16274A;
+	color: #16274a;
 }
 
 .quality__text h1 {
@@ -59,20 +59,20 @@
 	gap: 12px;
 }
 
-.quality__slide span {
+.quality__slide p {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
-	color: #16274A;
+	color: #16274a;
 }
 
-.quality__slide a {
+.quality__slide span {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 120%;
 	display: flex;
 	align-items: center;
-	color: #16274A;
+	color: #16274a;
 }
 
 .quality__slide img {
@@ -161,3 +161,4 @@
 		display: none;
 	}
 }
+

@@ -142,6 +142,23 @@ const qualitySwiper = new Swiper(".quality__swiper", {
 	},
 });
 
+const partnersSwiper = new Swiper(".about-company__partners .swiper", {
+	autoplay: {
+		delay: 1000,
+	},
+	direction: "horizontal",
+	slidesPerView: 2,
+	spaceBetween: 30,
+	breakpoints: {
+		1140: {
+			slidesPerView: 6,
+		},
+		575: {
+			slidesPerView: 4,
+		},
+	},
+});
+
 takeControlAccordion(".about-company", ".accordion__list", {
 	accordionItemSelector: ".accordion__item",
 	accordionItemTogglerSelector: ".accordion__toggle",
@@ -162,3 +179,4 @@ takeControlAccordion(".direction", ".accordion__list", {
 	accordionItemContentSelector: ".accordion__content",
 	accordionItemActiveClass: "accordion__item_active",
 });
+
